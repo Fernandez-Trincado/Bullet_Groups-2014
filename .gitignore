@@ -1,3 +1,7 @@
+*.bbl
+*.blg
+*.dvi
+*.ps
 *.aux
 *.log
 *.py[cod]
