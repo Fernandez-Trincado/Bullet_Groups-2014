@@ -23,6 +23,7 @@
 \newcommand{\hmsun}{{\ifmmode{h^{-1}{\rm {M_{\odot}}}}\else{$h^{-1}{\rm{M_{\odot}}}$}\fi}}  
 \newcommand{\Msun}{{\ifmmode{{\rm {M_{\odot}}}}\else{${\rm{M_{\odot}}}$}\fi}}  
 \newcommand{\msun}{{\ifmmode{{\rm {M_{\odot}}}}\else{${\rm{M_{\odot}}}$}\fi}}  
+\newcommand{\kms}{{\ifmmode{{\mathrm{\,km\ s}^{-1}}}\else{\,km~s$^{-1}$}\fi}}
 \newcommand{\bullb}{MACS J0025.4-1222}
 \newcommand{\bulla}{1E0657---56} 
 \shorttitle{Bullet Groups}
@@ -60,6 +61,32 @@ displacements.
 
 \section{Introduction}
 
+
+The Bullet Cluster provided a new kind of observational evidence of
+the existece of dark matter. Quantifying the displacement between dark
+matter and the dominant baryonic component (hot X-ray emitting gas)
+has been used to test the CDM paradigm itself by quantifying the
+substructure velocity requiered to produce such displacement and also
+by estimating the expected abundance of such events in the Universe.
+
+Since that time there are other observations of other Bullet-like
+systems [...].
+
+Recently \citep{Gastaldello} observed baryonic-DM displacement if
+$124\pm 20$ kpc in a group-like system with a total mass $2.4\pm 0.6
+\times 10^{14}$\Msun. Systems of this mass are $\sim 10$ times more massive
+than cluster systems in the mass range $>10^{15}$\hMsun, this opens
+up the possibility of observationally finding bullet groups in a fair
+amount to impose constraints on $\Lambda$CDM. This greater abundance
+has to be weighted by the fraction of systems that present large
+displacements. Such study has been performed for clusters but not for
+lower mass systems.
+
+In this Letter we present prediction for the abundance of group-like
+systems that might show a DM-baryon displacement. To this end we use a
+N-body cosmological simulation with such a resolution that allows us
+to identify multimodal dark matter clumps in the circular velocity
+range $300-1000$\kms. 
 
 This paper is organized as the follows. In Section
 \ref{sec:simulation} we present the simulation and the halo catalogs
@@ -183,7 +210,7 @@ displacements and this is shown in the Figure \ref{displacements} for the two gr
 
 \begin{figure*}
 \begin{center}
-\includegraphics[width=1.1\textwidth]{Figures_eps/figure_7_1.eps}
+%\includegraphics[width=1.1\textwidth]{Figures_eps/figure_7_1.eps}
 \end{center}
 \caption{Cumulative distribution (P$>d_{2d,(X,Y)}$) of displacements
   for the projection (X,Y). {\bf Left panel:} Sample with
@@ -191,7 +218,7 @@ displacements and this is shown in the Figure \ref{displacements} for the two gr
   dashed line, correspond to the separation between dark matter to
   dark matter estimate in this work as the double of separation
   between the collisional gas and dark matter of 124$\pm$20 kpc
-  reported by \citet{gastaldello} for the group SL2S J08544-0121.
+  reported by \citet{Gastaldello} for the group SL2S J08544-0121.
   {\bf Right panel:} Sample with $300 $ kms$^{-1} <\nu_{max}<700 $
   kms$^{-1}$ for different redshifts.}  
 \label{displacements}
@@ -201,8 +228,8 @@ displacements and this is shown in the Figure \ref{displacements} for the two gr
 \subsection{Number expected of Bullet Groups in the sample}
 
 
-In order of estimate the number of Bullet Groups expected in the Bolshoi Cosmological Simulation, we 
-define the configuration of this system as one where the substructure is coming out of the host halo ($cos(\theta)>0.5$). For this 
+In order to estimate the number of Bullet Groups expected in the
+Bolshoi Cosmological Simulation, we define the configuration of this system as one where the substructure is coming out of the host halo ($cos(\theta)>0.5$). For this 
 we make the scalar product between the velocity vector and position vector that defines the separation between 
  the host halo and the substructure, as shown below: \\
  
