@@ -15,6 +15,7 @@ clean:
 	rm -f $(MAIN).pdf
 	rm -f $(MAIN).blg
 	rm -f $(MAIN).log
+	rm -f $(MAIN).dvi
 	rm -f *~
 view: 
 	open $(MAIN).pdf &
