@@ -1,5 +1,8 @@
+*.aux
+*.log
 *.py[cod]
-
+*msNotes.bib
+*.DS_Store
 # C extensions
 *.so
 
