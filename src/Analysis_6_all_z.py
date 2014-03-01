@@ -7,17 +7,23 @@ import pylab as plt
 
 z_=[0,1,0.25,0.5]
 
-for i in np.arange(4):
 
-	halo_=sc.genfromtxt('Host_700kms_z'+str(int(i))+'.dat')
-	sub_=sc.genfromtxt('Host_700kms_z'+str(int(i))+'.dat_substructure.dat')
-	label_=r'V$_{max}$ > 700 km s$^{-1}$ & z='+str(z_[i]) 
-	siz1, siz2=2E-2, 4E-2
+for k in np.arange(len(z_)):
 
-#	halo_=sc.genfromtxt('Host_300kms_700kms_z'+str(int(i))+'.dat')
-#	sub_=sc.genfromtxt('Host_300kms_700kms_z'+str(int(i))+'.dat_substructure.dat')
-#	label_=r'300 km s$^{-1}$ < $\nu_{max}$ < 700 km s$^{-1}$ & z='+str(z_[i])
+#	halo_=sc.genfromtxt('Host_300kms_700kms_z'+str(int(k))+'.dat')
+#	sub_=sc.genfromtxt('Host_300kms_700kms_z'+str(int(k))+'.dat_substructure.dat')
+#	label_=r'300 km s$^{-1}$ < $\nu_{max}$ < 700 km s$^{-1}$ & z='+str(z_[k])
 #	siz1, siz2=2E-4, 4E-4
+#	etq='figure_6_300kms_700kms_'
+
+
+	halo_=sc.genfromtxt('Host_700kms_z'+str(int(k))+'.dat')
+	sub_=sc.genfromtxt('Host_700kms_z'+str(int(k))+'.dat_substructure.dat')
+	label_=r'$\nu_{max}$ > 700 km s$^{-1}$ & z='+str(z_[k])
+	siz1, siz2=2E-4, 4E-4
+	etq='figure_6_700kms_'
+
+
 		
 	#Variables
 	
@@ -67,13 +73,14 @@ for i in np.arange(4):
 	YZ=np.sort(dist_2d_YZ_[mask_v])
 	XZ=np.sort(dist_2d_XZ_[mask_v])
 	XYZ=np.sort(dist_3d_[mask_v])
+
 	
-	f=plt.figure(1)
-	f2=plt.figure(2)
-	f3=plt.figure(3)
-	f4=plt.figure(4)
-	f5=plt.figure(5)
-	
+	f=plt.figure(1+(k*5),(20,18))
+	f2=plt.figure(2+(k*5),(20,18))
+	f3=plt.figure(3+(k*5),(20,18))
+	f4=plt.figure(4+(k*5),(20,18))
+	f5=plt.figure(5+(k*5),(20,18))
+ 
 	a1=f.add_subplot(2,2,1)
 	a2=f.add_subplot(2,2,2)
 	a3=f.add_subplot(2,2,3)
@@ -91,17 +98,17 @@ for i in np.arange(4):
 	a2.legend(loc=1,numpoints=1,fontsize='medium')
 	a3.legend(loc=1,numpoints=1,fontsize='medium')
 	a4.legend(loc=1,numpoints=1,fontsize='medium')
-	
+
 	
 	a1.set_ylabel(r'$\nu_{circ,sub}/\nu_{circ,Halo}$',fontsize='x-large')
 	a2.set_ylabel(r'$\nu_{circ,sub}/\nu_{circ,Halo}$',fontsize='x-large')
 	a3.set_ylabel(r'$\nu_{circ,sub}/\nu_{circ,Halo}$',fontsize='x-large')
 	a4.set_ylabel(r'$\nu_{circ,sub}/\nu_{circ,Halo}$',fontsize='x-large')
 	
-	a1.set_xlabel(r'$d_{real, (X,Y,Z)}$ (kpch$^{-1}$) ',fontsize='x-large')
-	a2.set_xlabel(r'$d_{real, (X,Y)}  $ (kpch$^{-1}$) ',fontsize='x-large')
-	a3.set_xlabel(r'$d_{real, (Y,Z)}  $ (kpch$^{-1}$) ',fontsize='x-large')
-	a4.set_xlabel(r'$d_{real, (X,Z)}  $ (kpch$^{-1}$) ',fontsize='x-large')
+	a1.set_xlabel(r'$d_{real, (X,Y,Z)}$ (h$^{-1}$kpc) ',fontsize='x-large')
+	a2.set_xlabel(r'$d_{real, (X,Y)}  $ (h$^{-1}$kpc) ',fontsize='x-large')
+	a3.set_xlabel(r'$d_{real, (Y,Z)}  $ (h$^{-1}$kpc) ',fontsize='x-large')
+	a4.set_xlabel(r'$d_{real, (X,Z)}  $ (h$^{-1}$kpc) ',fontsize='x-large')
 	
 	
 	a5.plot(XYZ,Y_,color='gray',label='(X,Y,Z)')
@@ -109,8 +116,8 @@ for i in np.arange(4):
 	a5.plot(YZ,Y_,color='green',label='(Y,Z)')
 	a5.plot(XZ,Y_,color='blue',label='(X,Z)')
 	a5.set_yscale('log')
-	a5.set_ylabel('P(>$d$)',fontsize='x-large')
-	a5.set_xlabel('$d$(kpch$^{-1}$)',fontsize='x-large')
+	a5.set_ylabel('P(>$d_{real, (X,Y,Z)}$)',fontsize='x-large')
+	a5.set_xlabel('$d_{real,(X,Y,Z)}$(h$^{-1}$kpc)',fontsize='x-large')
 	a5.legend(loc=1,numpoints=1,fontsize='medium')
 	a5.text(55,siz1,r'$(\nu_{circ,sub}/\nu_{circ,Halo}) > 0.5$',fontsize='x-large')
 	a5.text(55,siz2,label_,fontsize='x-large')
@@ -120,13 +127,13 @@ for i in np.arange(4):
 	a8.plot(YZ,Y_,color='green',label='(Y,Z)')
 	a8.plot(XZ,Y_,color='blue',label='(X,Z)')
 	a8.set_yscale('log')
-	a8.set_ylabel('P(>$d$)',fontsize='x-large')
-	a8.set_xlabel('$d_{2d}$(kpch$^{-1}$)',fontsize='x-large')
+	a8.set_ylabel('P(>$d_{real, (X,Y)}$)',fontsize='x-large')
+	a8.set_xlabel('$d_{real, (X,Y)}$(h$^{-1}$kpc)',fontsize='x-large')
 	a8.legend(loc=1,numpoints=1,fontsize='medium')
 	a8.text(55,siz1,r'$(\nu_{circ,sub}/\nu_{circ,Halo}) > 0.5$',fontsize='x-large')
 	a8.text(55,siz2,label_,fontsize='x-large')
 	a8.axvline(x=(124./0.6777)*2.,color='black',linestyle='--')
-	
+
 	
 	
 	a6.plot(Xoff_old_[mask_v],Xoff_new_[mask_v],'.',color='black',label=label_)
@@ -137,7 +144,7 @@ for i in np.arange(4):
 	
 	a7.plot(dist_3d_[mask_v],Xoff_new_[mask_v],'.',color='black',label=label_)
 	a7.set_ylim(0,1)
-	a7.set_xlabel(r'$d_{3d}$ (kpch$^{-1}$)',fontsize='x-large')
+	a7.set_xlabel(r'$d_{real}$ (h$^{-1}$kpc)',fontsize='x-large')
 	a7.set_ylabel(r'X$_{off,new}$',fontsize='x-large')
 	a7.legend(loc=4,numpoints=1,fontsize='medium')
 	
@@ -151,11 +158,11 @@ for i in np.arange(4):
 	a7.tick_params(labelsize='x-large')
 	a8.tick_params(labelsize='x-large')
 	
-	plt.show()
+	f.savefig(etq+'_figure1_z='+str(z_[k])+'.eps')
+	f2.savefig(etq+'_figure2_z='+str(z_[k])+'.eps')
+	f3.savefig(etq+'_figure3_z='+str(z_[k])+'.eps')
+	f4.savefig(etq+'_figure4_z='+str(z_[k])+'.eps')
+	f5.savefig(etq+'_figure5_z='+str(z_[k])+'.eps')
 
-#	f.savefig('figure_6_700kms_v1_z.png')
-#	f2.savefig('figure6_700kms_v2_z'+str(z_[i])+'.png')
-#	f3.savefig('Host_700kms_v3_z'+str(z_[i])+'.png')
-#	f4.savefig('Host_700kms_v4_z'+str(z_[i])+'.png')
-#	f5.savefig('Host_700kms_v5_z'+str(z_[i])+'.png')
+
 

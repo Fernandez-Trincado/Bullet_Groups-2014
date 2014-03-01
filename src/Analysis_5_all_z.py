@@ -80,10 +80,10 @@ af1_m2.plot(d_real2_z2,Y_2_z2,color='red',ls='--',label='z=0.5')
 af1_m2.plot(d_real2_z1,Y_2_z1,color='green',ls='--',label='z=1')
 
 af1_m1.set_xlabel(r'$d_{real}$ (kpch$^{-1}$)',fontsize='x-large')
-af1_m1.set_ylabel(r'P(>$d$)',fontsize='x-large')
+af1_m1.set_ylabel(r'P(>$d_{real}$)',fontsize='x-large')
 af1_m1.legend(loc=1,numpoints=1,fontsize='medium')
 af1_m2.set_xlabel(r'$d_{real}$ (kpch$^{-1}$)',fontsize='x-large')
-af1_m2.set_ylabel(r'P(>$d$)',fontsize='x-large')
+af1_m2.set_ylabel(r'P(>$d_{real}$)',fontsize='x-large')
 af1_m2.legend(loc=1,numpoints=1,fontsize='medium')
 
 #Figure 2

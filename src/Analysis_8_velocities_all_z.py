@@ -15,7 +15,7 @@ def fun_(var1,var2):
 	Xoff_new_, V_circ_,dist_3d_,dist_2d_XY_, dist_2d_YZ_, dist_2d_XZ_=np.array([]), np.array([]), np.array([]),np.array([]), np.array([]), np.array([])#, Xoff_old_, V_circ_, dist_3d_, dist_2d_XY_, dist_2d_YZ_, dist_2d_XZ_, Rvirial_host_=np.array([]), np.array([]), np.array([]), np.array([]), np.array([]), np.array([]), np.array([]), np.array([])
 	angulo_=np.array([])	
 	#h=1
-	Parameter=0.5
+	Parameter=0.
 	
 	for i in np.arange(len(halo_[:,0])):
 	
@@ -173,7 +173,7 @@ af22.set_xlabel(r'$d_{real, (X,Y)}$ (kpch$^{-1}$)',fontsize='x-large')
 af22.tick_params(labelsize='x-large')
 af22.legend(loc=1,numpoints=1,fontsize='medium')
 af22.set_yscale('log')
-#af22.axvline(x=(124./0.6777)*2.,color='gray',linestyle='-')
+af22.axvline(x=(124./0.6777)*2.,color='gray',linestyle='-')
 
 
 #af23.plot(np.sort(dist_2d_YZ_s_z0[mask_ang0]),Y_z0,lw=3,ls='--',color='black',label='z=0')
