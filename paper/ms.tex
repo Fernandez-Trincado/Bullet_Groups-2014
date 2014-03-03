@@ -1,5 +1,5 @@
-%\documentclass{emulateapj}
-\documentclass{aastex}
+\documentclass{emulateapj}
+%\documentclass{aastex}
 \submitted{{\it Submitted for publication in ApJL}}
 \usepackage{multirow,color,wrapfig,ulem}
 \usepackage {graphicx}
@@ -105,23 +105,54 @@ discussion and conclusion in Sections \ref{sec:discussion} and
 We use the Bolshoi Run, a cosmological DM only simulation over a cubic
 volume of 250 comoving \hMpc on a side. The simulation uses the ART code to
 follow the evolution of  a dark matter density field sampled with
-$2024^3$ from $z=80$ to $z=0$ [...]. The cosmology used  corresponds to  the spatially flat
-concordance model with the following parameters:  the density
-parameter for matter (dark matter$+$baryons) $\Omega_m=0.27$, the
-density parameter for baryonic matter  $\Omega_b=0.0469$, the density
-parameter for dark energy $\Omega_{\Lambda}=0.73$, the Hubble
-parameter $h=0.7$, the 
+$2024^3$ from $z=80$ to $z=0$ [...]. The cosmology used  corresponds
+to  the spatially flat concordance model with the following
+parameters:  the density parameter for matter (dark matter$+$baryons)
+$\Omega_m=0.27$, the density parameter for baryonic matter
+$\Omega_b=0.0469$, the density parameter for dark energy
+$\Omega_{\Lambda}=0.73$, the Hubble parameter $h=0.7$, the
 normalization of the Power spectrum $n=0.95$ and the amplitude of mass
 density fluctuation (at redshift z$=$0) $\sigma_8=0.82$.  The number
 of particles used for each of the DM component was $2048^3$, resulting
-in a mass resolution of $1.35 \times 10^8$ M$_{\odot}$h$^{-1}$. \citet{2011ApJ...740..102K}. 
+in a mass resolution of $1.35 \times 10^8$
+M$_{\odot}$h$^{-1}$. \citet{2011ApJ...740..102K}.  
 
 \section{Bullet Geometry and Measurement Setup}
 \label{sec:setup}
 
-The configuration of this system is shown in  Figure
-\ref{configuration}, where can be distinguish the host halo and
-substructure for the a particular configuration in z$=0$ and the 
+The configuration of the BGs in the simulations is shown in Figure
+\ref{configuration}. There we depict a host and its most massive
+sub-halo from in a particular case found at z$=0$. The arrows show the
+position and the velocity vectors sub-halo in a frame of reference
+where the main halo is at rest; thus  $\vec{v{}}=\vec{v}_{sub}-\vec{v}_{halo}$ and
+$\vec{r}=\vec{r}_{sub}-\vec{r}_{halo}$.  The angle between these two
+vectors characterized by,
+\begin{equation}
+  \mu\equiv \cos(\theta)=\frac{\vec{v{}}\cdotp{}\vec{r}}{\left\|v{}\right\| \left\|r\right\|}
+ \end{equation} 
+%
+encodes the geometry of the collision, i.e. cases of $|\mu|\approx 1$
+can be considered as head-on collisions while $|\mu|\approx 0$
+describe a grazing trajectory.
+
+The bullet-like encounter can be instantaneously described by
+quantities the following quantities the circular velocity of the host
+and the sub-halo, $V_{\rm c,host}$ and $V_{\rm c,  sub}$; the size of
+the host halo $R_{\rm vir}$; the relative position and velocity of the
+substructre, $\vec{v}$ and $\vec{r}$; and the angle between the
+position and velocity $\mu$. 
+
+Using these quantities one can describe three main stages in a
+Bullet-like collision. First, the sub-halo crosses the virial radius
+of the host halo in a head-on fashion, $|\vec{r}|/R_{\rm vir}\approx
+1$ and $\mu\approx<0.0$. Second, as the sub-halo crosses for the first
+time the center of the host halo $|\vec{r}|/R_{\rm vir} <
+1.0$ and $\mu>0.0$. Third, as the sub-halo reaches apogee and
+comes back to the center of the halo $|\vec{r}|/R_{\rm vir} < 1.0$ and
+$\mu<0.0$.
+
+
+the 
 mass ranges and number of host halos and substructures 
 are summary in the Table \ref{table1}. Of all the possible configurations that can be presented
 in Figure \ref{configuration}, we are interested in estimate in the simulation the number 
@@ -137,26 +168,28 @@ in a scatter plot in the Figure \ref{cos_theta1} and the distribution of $\nu_{c
 is shown in  Figure \ref{cos_theta2}, both figures for differents z. 
 
 
-\begin{table}
+\begin{table*}
 \begin{center}
 \begin{tabular}{ccccccc}\hline\hline
-Sample       & Minimum Mass           & Maximum Mass          & \# Halos  & \# Halos  & \# Halos & \# Halos \\
-             & M$_{\odot}$h$^{-1}$    & M$_{\odot}$h$^{-1}$   &   $z=0$   & $z=0.25$  & $z=0.5$  & $z=1$  \\\hline
-Host Halo    & 0.35$\times{}10^{14}$  & 1.09$\times{}10^{14}$ &    400    &   362     &   310    &  192   \\
-Substructure & 0.38$\times{}10^{11}$  & 0.30$\times{}10^{14}$ &    400    &   362     &   310    &  192   \\\hline
+Sample       & Minimum $V_{\rm c}$         & Maximum $V_{\rm c}$          & \# Halos  & \# Halos  & \# Halos & \# Halos \\
+             & \kms    & \kms  &   $z=0$   & $z=0.25$  & $z=0.5$  & $z=1$  \\\hline
+Host   & 300\kms & XX &    400    &   362     &   310    &  192   \\ 
+Sub-structure & 75\kms  & XX &    XX   &   XX     &   XX    &  XX   \\\hline
 \end{tabular} 
-\caption{Mass ranges for the two groups selected in this work in different redshifts.}
+\caption{Circular velocity ranges for the halos and subhalos at
+  different redshifts.}  
 \label{table1}
 \end{center}
-\end{table}
+\end{table*}
 
-\begin{figure*}
+\begin{figure}
 \begin{center}
-\includegraphics[width=0.90\textwidth]{Figures_eps/Bullet_Group.eps}
+\includegraphics[width=0.45\textwidth]{Figures_eps/Bullet_Group.eps}
 \end{center}
-\caption{Configuration for a host halo (dashed circle) and sub-structure (black circle) in the sample. } 
+\caption{Configuration for a host halo (dashed circle) and
+  sub-structure (black circle) in the sample.}  
 \label{configuration}
-\end{figure*}
+\end{figure}
 
 
 
@@ -166,17 +199,18 @@ Substructure & 0.38$\times{}10^{11}$  & 0.30$\times{}10^{14}$ &    400    &   36
 \includegraphics[width=1.0\textwidth]{Figures_eps/figure_5_4.eps}
 \end{center}
 \caption{Scatter plot for $X_{off}$ as function of the relation between velocities of substructures and the host halos and 
-for different z. The top panel is represented to the sample with $\nu>700$ kms$^{-}1$ and down panel is represented 
-for $\nu<700$ kms$^{-1}$} 
+for different z. The top panel is represented to the sample with $v > 700$ \kms and down panel is represented 
+for $v<700$ \kms} 
 \label{cos_theta1}
 \end{figure*}
 
 \begin{figure*}
 \begin{center}
-\includegraphics[width=1.0\textwidth]{Figures_eps/figure_5_2.eps}
+%\includegraphics[width=1.0\textwidth]{Figures_eps/figure_5_2.eps}
 \end{center}
-\caption{Distributions of $\nu_{circ,Halo}/\nu_{circ,Sub}$ for differents z. The left panel correpond to the sample 
-with $\v>700$ kms$^{-1}$ and right panel correpond to the sample with $\nu<700$ kms$^{-1}$.} 
+\caption{Integrated distributions of $|\vec{v}|/V_{\rm c,host}$ at all
+  $z$. The left panel correponds to the sample with $V_{\rm c, host}>700$ \kms and
+  right panel correpond to the sample with $V_{\rm c,host}<700\kms$.} 
 \label{cos_theta2}
 \end{figure*}
 
@@ -213,15 +247,15 @@ the substructure, both are dark matter distributions.
 In order to explore the distribution of displacements expected in the observational, we define a new parameter given by:\\
 
 \begin{equation}
- \frac{\nu_{circ,sub}}{\nu_{circ,halo}}=0.5
+ \frac{v_{circ,sub}}{v_{circ,halo}}=0.5
 \end{equation}
  
 
-Figure \ref{newparameter} shows the scatter plot of the parameter $\left(\frac{\nu_{circ,sub}}{\nu_{circ,halo}}\right)$ vs the 
+Figure \ref{newparameter} shows the scatter plot of the parameter $\left(\frac{v_{circ,sub}}{v_{circ,halo}}\right)$ vs the 
 displacement ($d_{2d,(X,Y)}$) between the host halo and the substructure and for different redshifts. This parameter is 
 consistent with the observations. The red star simbol in the Figure \ref{newparameter} is equal to 0.54 corresponding to 
 the fraction in velocity dispersion in the line-of-sigth of the group SL2S SJ08544-0121 ($\sigma_{host,halo}=341^{+43}_{-109}$ kms$^{-1}$ and $\sigma_{substructure}=185^{+30}_{-62}$), reported by \citet{2013A&A...552A..80M}.
-Based in the parameter $\left(\frac{\nu_{circ,sub}}{\nu_{circ,halo}}\right)>0.5$, we estimate the expected distribution of
+Based in the parameter $\left(\frac{v_{circ,sub}}{v_{circ,halo}}\right)>0.5$, we estimate the expected distribution of
 displacements and this is shown in the Figure \ref{displacements} for the two groups classified in this work.
  
 
@@ -232,12 +266,12 @@ displacements and this is shown in the Figure \ref{displacements} for the two gr
 \includegraphics[width=1.0\textwidth]{Figures_eps/figure_7_2.eps}
 \includegraphics[width=1.0\textwidth]{Figures_eps/figure_7_3.eps}
 \end{center}
-\caption{Scatter $\left(\frac{\nu_{circ,sub}}{\nu_{circ,halo}}\right)$
+\caption{Scatter $\left(\frac{v_{circ,sub}}{v_{circ,halo}}\right)$
   vs $d_{2d,(X,Y)}$ for different redshifts. The  horizontal dashed
   line correpond to
-  $\left(\frac{\nu_{circ,sub}}{\nu_{circ,halo}}\right)=0.5$ and the
+  $\left(\frac{v_{circ,sub}}{v_{circ,halo}}\right)=0.5$ and the
   red star simbol correspond to
-  $\left(\frac{\nu_{circ,sub}}{\nu_{circ,halo}}\right)=0.54$ for SL2S
+  $\left(\frac{v_{circ,sub}}{v_{circ,halo}}\right)=0.54$ for SL2S
   SJ08544-0121 in \citet{2013A&A...552A..80M}. The  four top panels
   are the sample with circular velocities $>700$ kms$^{-1}$ and the
   four down panels are the sample with  circular velocities between
@@ -253,12 +287,12 @@ displacements and this is shown in the Figure \ref{displacements} for the two gr
 \end{center}
 \caption{Cumulative distribution (P$>d_{2d,(X,Y)}$) of displacements
   for the projection (X,Y). {\bf Left panel:} Sample with
-  $\nu_{max}>700$ kms$^{-1}$  for different redshifts. The vertical
+  $v_{max}>700$ kms$^{-1}$  for different redshifts. The vertical
   dashed line, correspond to the separation between dark matter to
   dark matter estimate in this work as the double of separation
   between the collisional gas and dark matter of 124$\pm$20 kpc
   reported by \citet{Gastaldello} for the group SL2S J08544-0121.
-  {\bf Right panel:} Sample with $300 $ kms$^{-1} <\nu_{max}<700 $
+  {\bf Right panel:} Sample with $300 $ kms$^{-1} <v_{max}<700 $
   kms$^{-1}$ for different redshifts.}  
 \label{displacements}
 \end{figure*}
@@ -272,12 +306,6 @@ Bolshoi Cosmological Simulation, we define the configuration of this system as o
 we make the scalar product between the velocity vector and position vector that defines the separation between 
  the host halo and the substructure, as shown below: \\
  
- \begin{equation}
-  cos(\theta)=\frac{\vec{\nu{}}\cdotp{}\vec{r}}{\left\|\nu{}\right\| \left\|r\right\|}
- \end{equation}
-
-where, $\vec{\nu{}}=\vec{\nu}_{sub}-\vec{\nu}_{halo}$ and $\vec{r}=\vec{r}_{sub}-\vec{r}_{halo}$, in the Figure \ref{cos_theta}
-is shown the scatter plot of $cos(\theta{})$ vs $X_{off,new}=\frac{d_{2d,(X,Y)}}{R_{virial,halo}}=\frac{d_{real,(X,Y)}}{R_{virial,halo}}$.  
 
 
 \begin{figure*}
@@ -285,7 +313,7 @@ is shown the scatter plot of $cos(\theta{})$ vs $X_{off,new}=\frac{d_{2d,(X,Y)}}
 \includegraphics[width=1.0\textwidth]{Figures_eps/figure_8_1_nu=0.5_300kms_700kms.eps}
 \end{center}
 \caption{Scatter of $cos(\theta)$ vs $X_{off,new}$. The red dashed line correpond to the limit for $cos(\theta{})>0.5$,  
-where the substructure is emerging from the host halo and  $\left(\frac{\nu_{circ,sub}}{\nu_{circ,halo}}\right)\geq0.5$, 
+where the substructure is emerging from the host halo and  $\left(\frac{v_{circ,sub}}{v_{circ,halo}}\right)\geq0.5$, 
 cicular velocities $<700$ kms$^{-1}$ and different redshifts.} 
 \label{cos_theta}
 \end{figure*}
@@ -294,7 +322,7 @@ cicular velocities $<700$ kms$^{-1}$ and different redshifts.}
 \begin{center}
 \includegraphics[width=1.0\textwidth]{Figures_eps/figure_8_3_nu=0.5_300kms_700kms.eps}
 \end{center}
-\caption{Cumulative distribution of $d_{real, (X,Y)}$ for $cos(\theta)>0.5$, $\left(\frac{\nu_{circ,sub}}{\nu_{circ,halo}}\right)\geq0.5$, 
+\caption{Cumulative distribution of $d_{real, (X,Y)}$ for $cos(\theta)>0.5$, $\left(\frac{v_{circ,sub}}{v_{circ,halo}}\right)\geq0.5$, 
 cicular velocities $<700$ kms$^{-1}$ and different redshifts.} 
 \label{cumulative_cos}
 \end{figure*}
