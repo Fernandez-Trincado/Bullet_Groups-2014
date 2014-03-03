@@ -120,20 +120,24 @@ in a mass resolution of $1.35 \times 10^8$ M$_{\odot}$h$^{-1}$. \citet{2011ApJ..
 \label{sec:setup}
 
 The configuration of this system is shown in  Figure
-\ref{configuration}, where you  an distinguish the host halo and
-substructure for a particular configuration in z$=0$.
+\ref{configuration}, where can be distinguish the host halo and
+substructure for the a particular configuration in z$=0$ and the 
+mass ranges and number of host halos and substructures 
+are summary in the Table \ref{table1}. Of all the possible configurations that can be presented
+in Figure \ref{configuration}, we are interested in estimate in the simulation the number 
+of Bullet Groups that may be present in an Universe of 250 $h^{-1}$Mpc. For this we selected 
+of the simulations all the substructures  
+whose velocities indicate a movement out of the host halo. Each halo in this sample has a quantity
+called $X_{off}$ that corresponds to the distance halo center (the minimum of the gravitational potential) to 
+the center of mass normalized by the
+virial radius ($R_{vir}$). Values of $X_{off}$
+equal to zero indicate relaxed halos, while $X_{off}>0$ indicates the existence
+of perturbed halos which can be considered candidates to be Bullet Groups and this ditribution is shown 
+in a scatter plot in the Figure \ref{cos_theta1} and the distribution of $\nu_{circ,Halo}/\nu_{circ,Sub}$ 
+is shown in  Figure \ref{cos_theta2}, both figures for differents z. 
 
 
-\begin{figure*}
-\begin{center}
-\includegraphics[width=0.90\textwidth]{Figures_eps/Bullet_Group.eps}
-\end{center}
-\caption{Configuration for a host halo (dashed circle) and sub-structure (black circle) in the sample. } 
-\label{configuration}
-\end{figure*}
-
-
-\begin{table*}
+\begin{table}
 \begin{center}
 \begin{tabular}{ccccccc}\hline\hline
 Sample       & Minimum Mass           & Maximum Mass          & \# Halos  & \# Halos  & \# Halos & \# Halos \\
@@ -144,16 +148,37 @@ Substructure & 0.38$\times{}10^{11}$  & 0.30$\times{}10^{14}$ &    400    &   36
 \caption{Mass ranges for the two groups selected in this work in different redshifts.}
 \label{table1}
 \end{center}
-\end{table*}
+\end{table}
+
+\begin{figure*}
+\begin{center}
+\includegraphics[width=0.90\textwidth]{Figures_eps/Bullet_Group.eps}
+\end{center}
+\caption{Configuration for a host halo (dashed circle) and sub-structure (black circle) in the sample. } 
+\label{configuration}
+\end{figure*}
+
+
+
 
 \begin{figure*}
 \begin{center}
 \includegraphics[width=1.0\textwidth]{Figures_eps/figure_5_4.eps}
 \end{center}
-\caption{} 
-\label{cos_theta}
+\caption{Scatter plot for $X_{off}$ as function of the relation between velocities of substructures and the host halos and 
+for different z. The top panel is represented to the sample with $\nu>700$ kms$^{-}1$ and down panel is represented 
+for $\nu<700$ kms$^{-1}$} 
+\label{cos_theta1}
 \end{figure*}
 
+\begin{figure*}
+\begin{center}
+\includegraphics[width=1.0\textwidth]{Figures_eps/figure_5_2.eps}
+\end{center}
+\caption{Distributions of $\nu_{circ,Halo}/\nu_{circ,Sub}$ for differents z. The left panel correpond to the sample 
+with $\v>700$ kms$^{-1}$ and right panel correpond to the sample with $\nu<700$ kms$^{-1}$.} 
+\label{cos_theta2}
+\end{figure*}
 
 
 \section{Results}
@@ -178,7 +203,7 @@ in this work. For each group, we  classified the corresponding
 substructures most massive and associated with the corresponding host
 halo.  In  this work,
 we estimate the expected distribution of displacements
-($d_{real,(X,Y)}$) in the projection 2-D that can estimate by
+($d_{real,(X,Y)}$) in the projection 2-D that can estimated by
 observations, these displacements correspond to the separation between
 the minimal potential of the host halo and the  minimal potential of
 the substructure, both are dark matter distributions. 
@@ -280,8 +305,13 @@ cicular velocities $<700$ kms$^{-1}$ and different redshifts.}
 
 
 
+
+
 \section{Conclusions}
 \label{sec:conclusions}
+
+
+
 
 
 \section*{Acknowledgements}
