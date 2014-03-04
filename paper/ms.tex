@@ -48,7 +48,7 @@
 We estimate the expected distribution of displacements between the two
 dominant dark matter peaks in halos within a mass range corresponding
 to galaxy groups. We find that the probability of finding a system
-similar with displacements of $\sim$400 kpch$^{-1}$ is between 40\%
+similar with displacements of $\sim$400 \hkpc is between 40\%
 for z$=0$ and 60\% for z$=1$ and $\Lambda$CDM standard model, which
 correspond to the observational constraint the object SL2S J08544-0121
 that is  a gravitational lens found in the SL2S and located at
@@ -117,11 +117,44 @@ of particles used for each of the DM component was $2048^3$, resulting
 in a mass resolution of $1.35 \times 10^8$
 M$_{\odot}$h$^{-1}$. \citet{2011ApJ...740..102K}.  
 
+
+The ranges of circular velocities for the host and sub-halos and the
+corresponding number of halos at every redshift are listed in Table
+\ref{table1}. 
+
+
+
+\begin{table*}
+\begin{center}
+\begin{tabular}{ccccccc}\hline\hline
+Sample  & Minimum $V_{\rm c}$ & Maximum $V_{\rm c}$  & \# Halos & \#
+Halos  & \# Halos & \# Halos \\ 
+ & \kms    & \kms  &   $z=0$   & $z=0.25$  & $z=0.5$  & $z=1$  \\\hline
+Host   & 300 & XX &    400    &   362     &   310    &  192   \\ 
+Sub-structure & 75  & XX &    XX   &   XX     &   XX    &  XX   \\\hline
+\end{tabular} 
+\caption{Circular velocity ranges for the halos and subhalos at
+  different redshifts.}  
+\label{table1}
+\end{center}
+\end{table*}
+
+
 \section{Bullet Geometry and Measurement Setup}
 \label{sec:setup}
 
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.45\textwidth]{Figures_eps/Bullet_Group.eps}
+\end{center}
+\caption{Configuration for a host halo (dashed circle) and
+  sub-structure (black circle) in the sample.}  
+\label{fig:configuration}
+\end{figure}
+
+
 The configuration of the BGs in the simulations is shown in Figure
-\ref{configuration}. There we depict a host and its most massive
+\ref{fig:configuration}. There we depict a host and its most massive
 sub-halo from in a particular case found at z$=0$. The arrows show the
 position and the velocity vectors sub-halo in a frame of reference
 where the main halo is at rest; thus  $\vec{v{}}=\vec{v}_{sub}-\vec{v}_{halo}$ and
@@ -149,71 +182,55 @@ from observations of these Bullet-like systems. The projected distance
 between two dominand dark matter clumps and the ratio of the
 galaxies' luminosities associated to them. From the simulation point
 of view this can be translated into the 2D projected values of
-$||\vec{r}||$, its value relative to the virial radius $\chi =
-||\vec{r}||_{2D}/R_{\rm vir}$ and the ratio of the circular velocities of the two clumps $V_{\rm c,sub}/V_{\rm c,host}$. Then, in order to gain better insight we use
+$||\vec{r}||$, its value relative to the virial radius $X_{\rm 2D}=
+||\vec{r}||_{\rm 2D}/R_{\rm vir}$ and the ratio of the circular velocities
+of the two clumps $V_{\rm c,sub}/V_{\rm c,host}$. In a higher degree
+of detail, in order to gaint better insight we use
 the sub-structure velocity as a fraction of the host's circular
 velocity, $||\vec{r}||/V_{\rm c, host}$, as a mesure of the the strenght
-of the interaction.  Finally, an even more detailed picture of the
-collision can be obtained through the values of $\mu$. 
+of the interaction.  Finally, we also measure the geometry of each
+interaction through the values for $\mu$.
 
 
 All the physical quantities described above can be used to describe
 the tree main stages in a bullet-like encounter. First, the sub-halo
 crosses the virial radius of the host halo starting a head on
-collission, $|\vec{r}|/R_{\rm vir}\approx 1$ and
+collission, $||\vec{r}||/R_{\rm vir}\approx 1$ and
 $\mu\approx<0.0$. Second, as the sub-halo crosses for the first time
-the center of the host halo $|\vec{r}|/R_{\rm vir} < 1.0$ and
+the center of the host halo $||\vec{r}||/R_{\rm vir} < 1.0$ and
 $\mu>0.0$. Third, as the sub-halo reaches apogee and comes back to the
-center of the halo $|\vec{r}|/R_{\rm vir} < 1.0$ and $\mu<0.0$. We use
+center of the halo $||\vec{r}||/R_{\rm vir} < 1.0$ and $\mu<0.0$. We use
 this quantities in Section XXX to fully characterize the different
 kind of interactions observed in the Bolshoi simulation. 
 
 
-The ranges of circular velocities for the host and sub-halos and the
-corresponding number of halos at every redshift are listed in Table
-\ref{table1}. 
 
-mass ranges and number of host halos and substructures 
-are summary in the Table \ref{table1}. Of all the possible
-configurations that can be presented in Figure \ref{configuration}, we
-are interested in estimate in the simulation the number  of Bullet
-Groups that may be present in an Universe of 250 $h^{-1}$Mpc. For this
-we selected  of the simulations all the substructures   
-whose velocities indicate a movement out of the host halo. Each halo
-in this sample has a quantity called $X_{off}$ that corresponds to the
-distance halo center (the minimum of the gravitational potential) to
-the center of mass normalized by the virial radius ($R_{vir}$). Values
-of $X_{off}$ equal to zero indicate relaxed halos, while $X_{off}>0$
-indicates the existence of perturbed halos which can be considered
-candidates to be Bullet Groups and this ditribution is shown  in a
-scatter plot in the Figure \ref{cos_theta1} and the distribution of
-$\nu_{circ,Halo}/\nu_{circ,Sub}$ is shown in  Figure \ref{cos_theta2},
-both figures for differents z.  
+\section{Results}
+\label{sec:results}
 
+\subsection{Separations and Relative Circular Velocities}
+\label{fig:separations}
 
-\begin{table*}
-\begin{center}
-\begin{tabular}{ccccccc}\hline\hline
-Sample       & Minimum $V_{\rm c}$         & Maximum $V_{\rm c}$          & \# Halos  & \# Halos  & \# Halos & \# Halos \\
-             & \kms    & \kms  &   $z=0$   & $z=0.25$  & $z=0.5$  & $z=1$  \\\hline
-Host   & 300\kms & XX &    400    &   362     &   310    &  192   \\ 
-Sub-structure & 75\kms  & XX &    XX   &   XX     &   XX    &  XX   \\\hline
-\end{tabular} 
-\caption{Circular velocity ranges for the halos and subhalos at
-  different redshifts.}  
-\label{table1}
-\end{center}
-\end{table*}
+\subsection{Relative Velocities}
+\label{fig:velocities}
 
-\begin{figure}
-\begin{center}
-\includegraphics[width=0.45\textwidth]{Figures_eps/Bullet_Group.eps}
-\end{center}
-\caption{Configuration for a host halo (dashed circle) and
-  sub-structure (black circle) in the sample.}  
-\label{configuration}
-\end{figure}
+\subsection{Collision Geometries}
+\label{fig:geometry}
 
+\section{Discussion}
+\label{sec:discussion}
+Strictly speaking our results apply to multimodal groups and the e
+expected separation betwen dark matter clumps. [...]
+ 
+Expected displacement between dark and baryonic components are better
+described by systems where the collision already occurred.[...]
+(comparison with the old bullet clusters paper?)
+
+The expectations to quantify this effects observationally are
+high. [...] 
+
+\section{Conclusions}
+\label{sec:conclusions}
 
 
 
@@ -238,11 +255,6 @@ for $v<700$ \kms}
 \end{figure*}
 
 
-\section{Results}
-\label{sec:results}
-
-\subsection{Cumulative Probability Distributions}
-\label{cumulative_distribution}
 
 We selected four snapshot of the simulation for four different
 redshifts (z$=0$, z$=0.25$, z$=0.5$ and z$=1$) based in the
