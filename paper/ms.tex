@@ -128,7 +128,9 @@ where the main halo is at rest; thus  $\vec{v{}}=\vec{v}_{sub}-\vec{v}_{halo}$ a
 $\vec{r}=\vec{r}_{sub}-\vec{r}_{halo}$.  The angle between these two
 vectors characterized by,
 \begin{equation}
-  \mu\equiv \cos(\theta)=\frac{\vec{v{}}\cdotp{}\vec{r}}{\left\|v{}\right\| \left\|r\right\|}
+  \mu\equiv
+  \cos(\theta)=\frac{\vec{v{}}\cdotp{}\vec{r}}{\left\|\vec{v}{}\right\|
+    \left\|\vec{r}\right\|} 
  \end{equation} 
 %
 encodes the geometry of the collision, i.e. cases of $|\mu|\approx 1$
@@ -142,30 +144,51 @@ the host halo $R_{\rm vir}$; the relative position and velocity of the
 substructre, $\vec{v}$ and $\vec{r}$; and the angle between the
 position and velocity $\mu$. 
 
-Using these quantities one can describe three main stages in a
-Bullet-like collision. First, the sub-halo crosses the virial radius
-of the host halo in a head-on fashion, $|\vec{r}|/R_{\rm vir}\approx
-1$ and $\mu\approx<0.0$. Second, as the sub-halo crosses for the first
-time the center of the host halo $|\vec{r}|/R_{\rm vir} <
-1.0$ and $\mu>0.0$. Third, as the sub-halo reaches apogee and
-comes back to the center of the halo $|\vec{r}|/R_{\rm vir} < 1.0$ and
-$\mu<0.0$.
+As a first approximation there are two quantities that are available
+from observations of these Bullet-like systems. The projected distance
+between two dominand dark matter clumps and the ratio of the
+galaxies' luminosities associated to them. From the simulation point
+of view this can be translated into the 2D projected values of
+$||\vec{r}||$, its value relative to the virial radius $\chi =
+||\vec{r}||_{2D}/R_{\rm vir}$ and the ratio of the circular velocities of the two clumps $V_{\rm c,sub}/V_{\rm c,host}$. Then, in order to gain better insight we use
+the sub-structure velocity as a fraction of the host's circular
+velocity, $||\vec{r}||/V_{\rm c, host}$, as a mesure of the the strenght
+of the interaction.  Finally, an even more detailed picture of the
+collision can be obtained through the values of $\mu$. 
 
 
-the 
+All the physical quantities described above can be used to describe
+the tree main stages in a bullet-like encounter. First, the sub-halo
+crosses the virial radius of the host halo starting a head on
+collission, $|\vec{r}|/R_{\rm vir}\approx 1$ and
+$\mu\approx<0.0$. Second, as the sub-halo crosses for the first time
+the center of the host halo $|\vec{r}|/R_{\rm vir} < 1.0$ and
+$\mu>0.0$. Third, as the sub-halo reaches apogee and comes back to the
+center of the halo $|\vec{r}|/R_{\rm vir} < 1.0$ and $\mu<0.0$. We use
+this quantities in Section XXX to fully characterize the different
+kind of interactions observed in the Bolshoi simulation. 
+
+
+The ranges of circular velocities for the host and sub-halos and the
+corresponding number of halos at every redshift are listed in Table
+\ref{table1}. 
+
 mass ranges and number of host halos and substructures 
-are summary in the Table \ref{table1}. Of all the possible configurations that can be presented
-in Figure \ref{configuration}, we are interested in estimate in the simulation the number 
-of Bullet Groups that may be present in an Universe of 250 $h^{-1}$Mpc. For this we selected 
-of the simulations all the substructures  
-whose velocities indicate a movement out of the host halo. Each halo in this sample has a quantity
-called $X_{off}$ that corresponds to the distance halo center (the minimum of the gravitational potential) to 
-the center of mass normalized by the
-virial radius ($R_{vir}$). Values of $X_{off}$
-equal to zero indicate relaxed halos, while $X_{off}>0$ indicates the existence
-of perturbed halos which can be considered candidates to be Bullet Groups and this ditribution is shown 
-in a scatter plot in the Figure \ref{cos_theta1} and the distribution of $\nu_{circ,Halo}/\nu_{circ,Sub}$ 
-is shown in  Figure \ref{cos_theta2}, both figures for differents z. 
+are summary in the Table \ref{table1}. Of all the possible
+configurations that can be presented in Figure \ref{configuration}, we
+are interested in estimate in the simulation the number  of Bullet
+Groups that may be present in an Universe of 250 $h^{-1}$Mpc. For this
+we selected  of the simulations all the substructures   
+whose velocities indicate a movement out of the host halo. Each halo
+in this sample has a quantity called $X_{off}$ that corresponds to the
+distance halo center (the minimum of the gravitational potential) to
+the center of mass normalized by the virial radius ($R_{vir}$). Values
+of $X_{off}$ equal to zero indicate relaxed halos, while $X_{off}>0$
+indicates the existence of perturbed halos which can be considered
+candidates to be Bullet Groups and this ditribution is shown  in a
+scatter plot in the Figure \ref{cos_theta1} and the distribution of
+$\nu_{circ,Halo}/\nu_{circ,Sub}$ is shown in  Figure \ref{cos_theta2},
+both figures for differents z.  
 
 
 \begin{table*}
