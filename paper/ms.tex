@@ -33,7 +33,7 @@
 
 \begin{document} 
 
-\title{Bullet Groups as a test of $\Lambda$CDM}
+\title{The abundance of Bullet Groups in $\Lambda$CDM}
 \author{J. G. Fern\'andez-Trincado$^{1,2,3}$, J. E. Forero-Romero$^1$
   and T. Verdugo$^3$} 
 \affil{$^1$ Departamento de F\'{i}sica, Universidad de los Andes,
@@ -68,7 +68,7 @@ displacements.
 The Bullet Cluster provided a new kind of observational evidence of
 the existece of dark matter. Quantifying the displacement between dark
 matter and the dominant baryonic component (hot X-ray emitting gas)
-\citep{ForeroRomero2011} has been used to test the CDM paradigm itself
+\citep{ForeroRomero2010} has been used to test the CDM paradigm itself
 by quantifying the substructure velocity requiered to produce such
 displacement \citep{Hayashi2006} to finally estimate the expected
 abundance of such events in the Universe. 
@@ -120,7 +120,8 @@ of particles used for each of the DM component was $2048^3$, resulting
 in a mass resolution of $1.35 \times 10^8$
 M$_{\odot}$h$^{-1}$. \citet{2011ApJ...740..102K}.  
 
-We use halo catalogs constructed using the BDM algorithm. [...]
+We use halo catalogs constructed using the BDM algorithm. [...] \citep{Riebe2013}.
+
 
 In the snapshots at redshift $z=0.0,0.25, 0.5$ and $1.0$ there are
 $XX, XX, XX, XX$ host halos with circular velocities $V_{\rm c}>
@@ -377,25 +378,25 @@ sub-structure has already passed through the center of the host
 halo. In this section we attempt an estimation for the DM-baryon
 displacement statistics. We work under the following
 hypothesis. First, we consider that systems with $|\mu|<0.9$ have a
-baryonic displacement, $d_{2D}^{\prime}$, equal to zero. Second, we
+baryonic displacement, $d_{2D}^{\rm bar}$, equal to zero. Second, we
 consider that all systems with infalling velocities $\mu<-0.9$ and
 large displacements $D_{\rm off}>0.6$ also have baryonic displacements
 equal to zero. Third, for all the other cases we estimate the
 displacement between the baryons and the dominand DM peak by the
 distances between the dominant peak and the center of mass of the main
-halo, $d_{2D}^{\prime}=D_{\rm off} R_{\rm vir}$, where $X_{\rm off}$
+halo, $d_{2D}^{\rm bar}=D_{\rm off} R_{\rm vir}$, where $X_{\rm off}$
 is the offset computed for each host halo in the original catalog.
 
 This simplified modeldoes not take into account that there is a
 fraction of halos with $\mu<-0.9$ and $D_{\rm off}<0.6$ for which the
-collision has not started and should have $d_{2D}^{\prime}=0$. A detailed
+collision has not started and should have $d_{2D}^{\rm bar}=0$. A detailed
 modeling of this fraction requires the study of the complete merger
 tree of the halo and sub-halo, a study beyond the scope of this
 Letter. Instead we cautio the reader that the derived fraction of
-halos with a displacement $<d_{2D}^{\prime}$ can be considered as an
+halos with a displacement $<d_{2D}^{\rm bar}$ can be considered as an
 upper limit. 
 
-The results for the integrated distributions for $>d_{2D}^{\prime}$
+The results for the integrated distributions for $>d_{2D}^{\rm bar}$
 are shown in Figure \ref{fig:baryonic_displacements}.[..]
 
 
@@ -407,37 +408,44 @@ repository. [...]
 \section{Conclusions}
 \label{sec:conclusions}
 
+In this Letter we estimate fraction of galaxy groups
+that can present observational features associated to a
+bullet-like event. This is motivated by the recent observational
+results of \citep{Gastaldello} where a system (\bullg) on the mass range
+$1\times 10^{14}$\hMsun and velocity dispersion $650$\kms was reported
+to feature a displacement between its baryonic (hot gas) and dark
+matter components. 
 
-We selected four snapshot of the simulation for four different
-redshifts (z$=0$, z$=0.25$, z$=0.5$ and z$=1$) based in the
-distribution of redshift in the Figure 1 by \citet{verdugo}, and  for
-each sample in redshift we selected the host halo with circular
-velocities greater than 300 kms$^{-1}$ and was split in two  principal
-groups: The first group correspond to host halo with circular
-velocities between 300 kms$^{-1}$ to 700 kms${^{-1}}$ with mass in the
-range of $10^{12}$ M$_\odot{}$ to $10^{14}$ M$_\odot{}$ in the range
-of mass of the Bullet Groups, and second group correspond to host halo
-with circular velocities greater than 700 kms$^{-1}$ with mass
-$\geq10^{14}$ M$_\odot{}$, in the range of mass of the Bullet
-Clusters, in  the Table \ref{table1} is shown the two groups selected
-in this work. For each group, we  classified the corresponding
-substructures most massive and associated with the corresponding host
-halo.  In  this work,
-we estimate the expected distribution of displacements
-($d_{real,(X,Y)}$) in the projection 2-D that can estimated by
-observations, these displacements correspond to the separation between
-the minimal potential of the host halo and the  minimal potential of
-the substructure, both are dark matter distributions. 
+Our estimate is based on large N-body DM-only cosmological
+simulation. We estimate the distribution of projected displacements
+between the dominant DM clumps in two kinds of systems; groups with circular
+velocities $300\kms<V_{\rm c}<700\kms$ and clusters with $V_{\rm
+  c}>700$\kms. We report these results at four different redshifts
+$z=0.0,0.25,0.5$ and $10$.
 
+We find that a fraction of $XX\pm XX\%$ of the halos in the group
+sample can present a displacement equal or larger than the observed displacement
+for \bullg. We also present these results in terms of the ratio of the
+circular velocities of the sub-halo to the host halo to find that the
+system \bullg is found within the expected parameter space spanned by
+the simulation. 
 
+Next we describe the geometry of the collision by the angle between
+the position and velocity vectors of the sub-halo with respect to the
+host. This allows us to separate three different instances: the
+sub-halo crosses the virial radio of the host, the sub-halo goes
+through the center of the host and the secondary
+infall after reaching apogee. 
 
+From this analysis we estimate a the integrated distribution of the
+displacements between the DM and the baryonic component. In this case
+we find that a fraction of $XX \pm XX\%$ halos in the group sample
+should present displacements equal or larger than those observed for
+the Bullet-Group \bullg. 
 
- 
+The results we present here can be used as a potential test of
+$\Lambda CDM$. (Comments about Gaels results on multimodal groups).
 
-
-
-
-\section*{Acknowledgements}
 
 The CosmoSim database used in this paper is a service by the
 Leibniz-Institute for Astrophysics Potsdam (AIP). The  BolshoiP
