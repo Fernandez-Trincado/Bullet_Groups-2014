@@ -68,9 +68,11 @@ displacements.
 The Bullet Cluster provided a new kind of observational evidence of
 the existece of dark matter. Quantifying the displacement between dark
 matter and the dominant baryonic component (hot X-ray emitting gas)
-has been used to test the CDM paradigm itself by quantifying the
-substructure velocity requiered to produce such displacement and also
-by estimating the expected abundance of such events in the Universe.
+\citep{ForeroRomero2011} has been used to test the CDM paradigm itself
+by quantifying the substructure velocity requiered to produce such
+displacement \citep{Hayashi2006} to finally estimate the expected
+abundance of such events in the Universe. 
+
 
 Since that time there are other observations of other Bullet-like
 systems [...].
@@ -165,7 +167,7 @@ from observations of these Bullet-like systems. The projected distance
 between two dominand dark matter clumps and the ratio of the
 galaxies' luminosities associated to them. From the simulation point
 of view this can be translated into the 2D projected values of
-$||\vec{r}||$, its value relative to the virial radius $X_{\rm 2D}=
+$||\vec{r}||$, its value relative to the virial radius $D_{\rm off}=
 ||\vec{r}||_{\rm 2D}/R_{\rm vir}$ and the ratio of the circular velocities
 of the two clumps $V_{\rm c,sub}/V_{\rm c,host}$. In a higher degree
 of detail, in order to gaint better insight we use
@@ -214,11 +216,9 @@ kind of interactions observed in the Bolshoi simulation.
 \label{fig:displacement}
 \end{figure*}
 
-
-
 \begin{figure*}
 \begin{center}
-\includegraphics[width=0.8\textwidth]{Figures_eps/figure_4_VcircsubVcirchalo_300kms_700kms.eps}
+\includegraphics[width=0.8\textwidth]{Figures_eps/figure_4_VcircsubVcirchalo_300kms_700kms.eps} 
 \end{center}
 \caption{2D histogram in the plane $V_{\rm c,sub}/V_{\rm
     c,host}$-$d_{2D}$. The left panel corresponds to groups and the
@@ -268,7 +268,12 @@ groups; right, clusters) at all redshifts. We stack the data because
 we do not observe any strong time evolution, aditionally this allows
 us to increase the signal in each bin. Overplotted there is an circle
 with error bars that represents the observational estimates for the
-system \bullg. 
+system \bullg using the fraction in velocity dispersion in
+the line-of-sigth of the group SL2S SJ08544-0121
+($\sigma_{host}=341^{+43}_{-109}$\kms and
+$\sigma_{sub}=185^{+30}_{-62}$\kms) reported by
+\citet{2013A&A...552A..80M} and the DM displacement inferred from the
+data presented by \cite{Gastaldello}.
 
 
 \subsection{Relative Velocities}
@@ -282,7 +287,7 @@ system \bullg.
 sub-halo with respect to its host. The left panel shows the results
 in physical units while the right panel show the same values
 normalized by the circular velocity of the host halo. The line coding
-follows the same structure as Figure \ref{fig:displacements}}
+follows the same structure as Figure \ref{fig:displacement}}
 \label{fig:velocities}
 \end{figure}
 
@@ -290,12 +295,14 @@ In Figure \ref{fig:velocities} we present the integrated probability
 of the relative peculiar velocities of the sub-halos with respect to
 the host halo. The left panel presents this velocity in physical units
 while the left panel presents them as a fraction of the circular
-velocity of the host halo. 
+velocity of the host halo.  
+
 
 The panel with the normalized velocities shows that the distribution
-of sub-halo velocities is close to universal. Regardless
-of the mass of the host halo and the redshift the integrated
-distributions lie very close to each other. 
+of sub-halo velocities is close to universal. Regardless of the mass
+of the host halo and the redshift the integrated distributions lie
+very close to each other.  
+
 
 The median of this distribution is located at $v/V_{\rm
   c,host}=1.1$. We also note the strong break at $v/V_{\rm
@@ -303,16 +310,12 @@ The median of this distribution is located at $v/V_{\rm
 allows us to probe fractions on the order of $10^{-4}$.  This break is
 located close the escape velocity of $v/V_{\rm c,host}$ for dark
 matter halos following a NFW profile with a concentration value
-$c\approx 6$ \citep{Hayashi2006}. 
+$c\approx 6$ \citep{Hayashi2006}.  
 
 
 
 \subsection{Collision Geometries}
 \label{fig:geometry}
-
-Figure \ref{fig:} presents the geometry of the bullet groups in our 
- the relative geometry of the collision using the
-variables $\mu$ and $X_{\rm off}$.
 
 \begin{figure*}
 \begin{center}
@@ -323,17 +326,77 @@ variables $\mu$ and $X_{\rm off}$.
 \end{figure*}
 
 
-\section{Discussion}
-\label{sec:discussion}
-Strictly speaking our results apply to multimodal groups and the e
-expected separation betwen dark matter clumps. [...]
- 
-Expected displacement between dark and baryonic components are better
-described by systems where the collision already occurred.[...]
-(comparison with the old bullet clusters paper?)
+Figure \ref{fig:} presents the geometry of the bullet groups using the 
+variables $\mu$ and $D_{\rm off}$. The first evident feature is that
+most of the configurations have $|mu|>0.9$ ($\theta\leq 30^{\circ}$),
+meaning that most of the collisions can be described as a head-on while
+only a minority with $|mu|<0.9$ have more tangential trajectories. For
+the pairs on radial trajectories there are three regions of interest
+in this plane that describe different stages in the collision,
+assuming that the sub-halo merges or falls below the detection
+threshold after the first pass through the center of the host halo.
 
-The expectations to quantify this effects observationally are
-high. [...] 
+
+The first region has $\mu\approx-1$ and $D_{\rm off}>0.6$, which
+locates the systems where a head-on collision has just started. The
+sub-halo is close to the boundary of the host halo and is
+infalling. The second region has $\mu\approx 1$ and $D_{\rm off}<0.6$;
+at this stage the collision continues after the first crossing of the
+host's center, the low number of halos with radial infalling velocities
+and displacements $D_{\rm off}>0.6$ sugesst that this the maximum
+range of radii for the apogee.  The third region corresponds to
+$\mu\approx-1$ and $D_{\rm off}<0.6$ which corresponds to the
+secondary infall after apogee. 
+
+
+
+\subsection{Displacement between Dark Matter and Baryons}
+\label{sec:baryonic_displacements}
+
+\begin{figure}
+\begin{center}
+%\includegraphics[width=0.5\textwidth]{Figures_eps/figure_3.eps}
+\end{center}
+\caption{Integrated probability distribution for the estimated
+  baryonic displacements in the group and cluster samples at all redshifts.}
+\label{fig:baryonic_displacements}
+\end{figure}
+
+These different collision geometries will produce different results in
+terms of the displacement between dark matter and baryons. Strictly
+speaking, the results we have derived so far, apply to multimodal groups and their
+expected separation betwen the two dominant dark matter clumps but it
+should not be interpreted that all have a corresponding DM-baryon
+displacement. The systems where the halo is starting to fall into the
+host ($\mu\approx-1$, $D_{\rm off}>0.6$) should not present a
+detectable DM-baryon displacement. 
+
+
+We clearly expect such displacement in the case where the
+sub-structure has already passed through the center of the host
+halo. In this section we attempt an estimation for the DM-baryon
+displacement statistics. We work under the following
+hypothesis. First, we consider that systems with $|\mu|<0.9$ have a
+baryonic displacement, $d_{2D}^{\prime}$, equal to zero. Second, we
+consider that all systems with infalling velocities $\mu<-0.9$ and
+large displacements $D_{\rm off}>0.6$ also have baryonic displacements
+equal to zero. Third, for all the other cases we estimate the
+displacement between the baryons and the dominand DM peak by the
+distances between the dominant peak and the center of mass of the main
+halo, $d_{2D}^{\prime}=D_{\rm off} R_{\rm vir}$, where $X_{\rm off}$
+is the offset computed for each host halo in the original catalog.
+
+This simplified modeldoes not take into account that there is a
+fraction of halos with $\mu<-0.9$ and $D_{\rm off}<0.6$ for which the
+collision has not started and should have $d_{2D}^{\prime}=0$. A detailed
+modeling of this fraction requires the study of the complete merger
+tree of the halo and sub-halo, a study beyond the scope of this
+Letter. Instead we cautio the reader that the derived fraction of
+halos with a displacement $<d_{2D}^{\prime}$ can be considered as an
+upper limit. 
+
+The results for the integrated distributions for $>d_{2D}^{\prime}$
+are shown in Figure \ref{fig:baryonic_displacements}.[..]
 
 
 In order to facilitate the reproducibility and reuse of our results we
@@ -367,28 +430,6 @@ the minimal potential of the host halo and the  minimal potential of
 the substructure, both are dark matter distributions. 
 
 
-
-In order to explore the distribution of displacements expected in the observational, we define a new parameter given by:\\
-
-\begin{equation}
- \frac{v_{circ,sub}}{v_{circ,halo}}=0.5
-\end{equation}
- 
-
-Figure \ref{newparameter} shows the scatter plot of the parameter
-$\left(\frac{v_{circ,sub}}{v_{circ,halo}}\right)$ vs the  displacement
-($d_{2d,(X,Y)}$) between the host halo and the substructure and for
-different redshifts. This parameter is  consistent with the
-observations. The red star simbol in the Figure \ref{newparameter} is
-equal to 0.54 corresponding to  the fraction in velocity dispersion in
-the line-of-sigth of the group SL2S SJ08544-0121
-($\sigma_{host,halo}=341^{+43}_{-109}$ kms$^{-1}$ and
-$\sigma_{substructure}=185^{+30}_{-62}$), reported by
-\citet{2013A&A...552A..80M}. Based in the parameter
-$\left(\frac{v_{circ,sub}}{v_{circ,halo}}\right)>0.5$, we estimate the
-expected distribution of displacements and this is shown in the Figure
-\ref{displacements} for the two groups classified in this work. 
-  
 
 
  
