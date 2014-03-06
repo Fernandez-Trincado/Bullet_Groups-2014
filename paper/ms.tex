@@ -100,7 +100,7 @@ discussion and conclusion in Sections \ref{sec:discussion} and
 \ref{sec:conclusions}. 
 
 
-\section{Simulation and halo catalogs}
+\section{Simulation, halo catalogs and pairs}
 \label{sec:simulation}
 
 We use the Bolshoi Run, a cosmological DM only simulation over a cubic
@@ -118,49 +118,31 @@ of particles used for each of the DM component was $2048^3$, resulting
 in a mass resolution of $1.35 \times 10^8$
 M$_{\odot}$h$^{-1}$. \citet{2011ApJ...740..102K}.  
 
+We use halo catalogs constructed using the BDM algorithm. [...]
 
-The ranges of circular velocities for the host and sub-halos and the
-corresponding number of halos at every redshift are listed in Table
-\ref{table1}. 
+In the snapshots at redshift $z=0.0,0.25, 0.5$ and $1.0$ there are
+$XX, XX, XX, XX$ host halos with circular velocities $V_{\rm c}>
+300$\kms and $XX, XX, XX, XX$ sub-halos with circular velocities
+$V_{\rm c}>75$\kms. These two sets of halos constitute the basis for
+our analysis.
 
-
-
-\begin{table*}
-\begin{center}
-\begin{tabular}{ccccccc}\hline\hline
-Sample  & Minimum $V_{\rm c}$ & Maximum $V_{\rm c}$  & \# Halos & \#
-Halos  & \# Halos & \# Halos \\ 
- & \kms    & \kms  &   $z=0$   & $z=0.25$  & $z=0.5$  & $z=1$  \\\hline
-Host   & 300 & XX &    400    &   362     &   310    &  192   \\ 
-Sub-structure & 75  & XX &    XX   &   XX     &   XX    &  XX   \\\hline
-\end{tabular} 
-\caption{Circular velocity ranges for the halos and subhalos at
-  different redshifts.}  
-\label{table1}
-\end{center}
-\end{table*}
-
+For each host halo in the sample we find its most massive
+sub-halo. Each pair host/sub-halo is considererd as a potential Bullet
+Group and is kept for the measurement and analysis described in the
+next section.
 
 \section{Bullet Geometry and Measurement Setup}
 \label{sec:setup}
 
-\begin{figure}
-\begin{center}
-\includegraphics[width=0.45\textwidth]{New_figures/Bullet_Group.eps}
-\end{center}
-\caption{Configuration for a host halo (dashed circle) and
-  sub-structure (black circle) in the sample.}  
-\label{fig:configuration}
-\end{figure}
+The Bullet groups is composed by two halos. the host halo and the sub
+halo. This configuration is described by the position and velocity of
+the sub-halo in a frame of reference where the main halo is at rest;
+thus  $\vec{v{}}=\vec{v}_{sub}-\vec{v}_{halo}$ and 
+$\vec{r}=\vec{r}_{sub}-\vec{r}_{halo}$, where the subscripts $host$
+and $sub$ refer to the host and sub-halo in the frame of reference of
+the simulation, respectively.
 
-
-The configuration of the BGs in the simulations is shown in Figure
-\ref{fig:configuration}. There we depict a host and its most massive
-sub-halo from in a particular case found at z$=0$. The arrows show the
-position and the velocity vectors sub-halo in a frame of reference
-where the main halo is at rest; thus  $\vec{v{}}=\vec{v}_{sub}-\vec{v}_{halo}$ and
-$\vec{r}=\vec{r}_{sub}-\vec{r}_{halo}$.  The angle between these two
-vectors characterized by, 
+The angle between these two vectors characterized by, 
 \begin{equation}
   \mu\equiv
   \cos(\theta)=\frac{\vec{v{}}\cdotp{}\vec{r}}{\left\|\vec{v}{}\right\|
@@ -328,12 +310,16 @@ $c\approx 6$ \citep{Hayashi2006}.
 \subsection{Collision Geometries}
 \label{fig:geometry}
 
+Figure \ref{fig:} presents the geometry of the bullet groups in our 
+ the relative geometry of the collision using the
+variables $\mu$ and $X_{\rm off}$.
+
 \begin{figure*}
 \begin{center}
 \includegraphics[width=1.0\textwidth]{Figures_eps/figure_4_300kms_700kms.eps}
 \end{center}
 \caption{x}
-\label{fig:velocities}
+\label{fig:geometry}
 \end{figure*}
 
 
@@ -357,9 +343,6 @@ repository. [...]
 
 \section{Conclusions}
 \label{sec:conclusions}
-
-
-
 
 
 We selected four snapshot of the simulation for four different
@@ -409,20 +392,6 @@ expected distribution of displacements and this is shown in the Figure
 
 
  
-
-
-
-\section{Discussion}
-\label{sec:discussion}
-
-
-
-
-
-
-\section{Conclusions}
-\label{sec:conclusions}
-
 
 
 
