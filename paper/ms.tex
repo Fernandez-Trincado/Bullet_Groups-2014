@@ -27,13 +27,13 @@
 \newcommand{\kms}{{\ifmmode{{\mathrm{\,km\ s}^{-1}}}\else{\,km~s$^{-1}$}\fi}}
 \newcommand{\bullb}{MACS J0025.4-1222}
 \newcommand{\bulla}{1E0657---56} 
-\newcommand{\bullg}{SL2S J08544-0121}
+\newcommand{\bullg}{SL2S J08544-0121~}
 \shorttitle{Bullet Groups}
 \shortauthors{Fern\'andez-Trincado et al.}
 
 \begin{document} 
 
-\title{The abundance of Bullet Groups in $\Lambda$CDM}
+\title{The abundance of Bullet-Groups in $\Lambda$CDM}
 \author{J. G. Fern\'andez-Trincado$^{1,2,3}$, J. E. Forero-Romero$^1$,
   T. Verdugo$^3$, G. Foex$^4$ and V. Motta$^4$} 
 \affil{$^1$ Departamento de F\'{i}sica, Universidad de los Andes,
@@ -51,23 +51,29 @@
 \begin{abstract}
 
 We estimate the expected distribution of displacements between the two
-dominant dark matter peaks in two groups of halos corresponding to
-galaxy groups and clusters. We find that 50\% to 60\% of the dark
-matter  with circular velocities in the range $300\kms$ to $700\kms$
-(groups) show multimodal morphologies with displacements between the
-dark matter clumps equal or larger than $133\pm21$\hkpc, which
-corresponds to the observational constraint the object SL2S
-J08544-0121 located at $z=0.35$ which has a velocity dispersion of
-$644^{+69}_{-102}\kms$. For dark matter halos with circular velocities
-larger than $700\kms$ (clusters) this fraction rises to $80\%$ to
-$85\%$. Using the same simulation we estimate the dark
-matter-to-baryon spatial separation and find that that $0.1\%$ to
+dominant density peaks in dark matter halos simulated in a full
+cosmological context. We use as a benchmark the
+observation of \bullg, which is the lowest mass system observed so far
+featuring a bi-modal dark matter distribution with a dislocated 
+baryonic component. The study extends previous theoretical studies by
+simulating two samples: groups and clusters. We find that 50\% to 60\%
+of the dark matter halos with circular velocities in the range
+$300\kms$ to $700\kms$ (groups) show multimodal morphologies with
+displacements between the dark matter clumps equal or larger than
+$133\pm21$\hkpc observed in \bullg. For dark matter halos with
+circular velocities larger than $700\kms$ (clusters) this fraction
+rises to $80\%$ to $85\%$. Using the same simulation we estimate the
+dark matter-to-baryon spatial separation and find that $0.1\%$ to
 $1.0\%$ of the low mass systems should present separations equal or
-larger than $87\pm 14$\hkpc corresponding to the same observational
+larger than $87\pm 14$\hkpc corresponding to our observational
 benchmark; for halos with circular velocities larger than $700\kms$
 this fraction is in the range of $4\%$ to $10\%$, consistent with
-previous studies of dark matter to baryon separations in
-clusters. These results present a weak dependence with redshift. 
+previous studies of dark matter to baryon separations in clusters. The
+extension of the theoretical predictions and observational results
+towards low mass Bullet-like configurations, i.e. larger abundance of
+systems,  opens up the possibility for a new statistical test of
+$\Lambda$CDM.  
+
 \end{abstract}
 
 \begin{keywords}
@@ -77,41 +83,57 @@ clusters. These results present a weak dependence with redshift.
 \section{Introduction}
 
 
-The Bullet Cluster provided a new kind of observational evidence of
-the existence of dark matter. Quantifying the displacement between dark
-matter and the dominant baryonic component (hot X-ray emitting gas)
-\citep{ForeroRomero2010} has been used to test the CDM paradigm itself
-by quantifying the substructure velocity required to produce such
-displacement \citep{Hayashi2006} to finally estimate the expected
-abundance of such events in the Universe. 
+The Bullet Cluster (massive cluster of galaxies \bulla) provided a new
+kind of observational evidence for the existence of dark matter
+\citep{Markevitch2004,Clowe2006}. Quantifying the displacement between
+dark matter and the dominant baryonic component (hot X-ray emitting gas)
+has been used to test the Cold Dark Matter (CDM)
+paradigm itself by quantifying the substructure velocity required to
+produce such displacement \citep{Hayashi2006, Springel2007,
+  Thompson2012}, the displacemeent between the dominant dark matter
+and baryonic component \citep{ForeroRomero2010} to estimate the
+expected abundance of such events in a $\Lambda$CDM Universe and even
+explore possible extensions to the concordance cosmological model
+\citep{Farrar2007,Lee2010,Lee2012}.    
 
 
-Since that time there are other observations of other Bullet-like
-systems [...].
+Since then, other examples of Bullet-like systems have been found; 
+MACS J0025.4-1222 \citep{Bradac2008}, Abell 2744 \citep{Merten2011},
+DLSCL J0916.2+2951 \citep{Dawson2012}, ZwCl 1234.0+02916
+\citep{Dahle2013}. Recently \citep{Gastaldello} observed baryonic-DM
+displacement if $124\pm 20$ kpc in a group-like system with a total
+mass $2.4\pm 0.6 \times 10^{14}$\Msun. Systems of this mass are
+$\sim10$ times more abundant than cluster systems in the mass range of
+the Bullet Cluster $>10^{15}$\hMsun, this opens up the possibility of
+observationally finding bullet groups in a fair amount to impose
+constraints on $\Lambda$CDM. 
 
-Recently \citep{Gastaldello} observed baryonic-DM displacement if
-$124\pm 20$ kpc in a group-like system with a total mass $2.4\pm 0.6
-\times 10^{14}$\Msun. Systems of this mass are $\sim 10$ times more massive
-than cluster systems in the mass range $>10^{15}$\hMsun, this opens
-up the possibility of observationally finding bullet groups in a fair
-amount to impose constraints on $\Lambda$CDM. This greater abundance
-has to be weighted by the fraction of systems that present large
-displacements. Such study has been performed for clusters but not for
-lower mass systems.
 
-In this Letter we present prediction for the abundance of group-like
-systems that might show a DM-baryon displacement. To this end we use a
-N-body cosmological simulation with such a resolution that allows us
-to identify multi-modal dark matter clumps in the circular velocity
-range $300-700$\kms. 
+However, a greater abundance of small mass systems has to be weighted
+by the probability of having a merger and 
+presenting a large displacement between the DM and baryonic
+components. These two conditions (merger rates, maximum possible
+displacement) are a funcion of halo mass in $\Lambda$CDM
+cosmologies.  Such study has been performed for clusters but not for
+lower mass systems \citep{ForeroRomero2010}. The existence of objects
+like \bullg and observational campaigns like the Strong Lensing Legacy
+Survey (SL2S) open up the possibility of finding multi-modal dark
+matter distributions in the group mass range.
+
+
+In this Letter we compute the abundance of group-like dark
+matter halos with a multi-modal morphology that also might present a
+DM-baryon displacement. To this end we use a N-body cosmological
+simulation with such a resolution that allows us to identify
+multi-modal dark matter distributions in hosts with circular velocities
+larger than $300$\kms.  
 
 This paper is organized as the follows. In Section
 \ref{sec:simulation} we present the simulation and the halo catalogs
 used in this work. We continue in Section \ref{sec:setup} with the
 geometry of the problem at hand and the measurements setup. Next in
-Section \ref{sec:results} we present our results to finish with a
-discussion and conclusion in Sections \ref{sec:discussion} and
-\ref{sec:conclussions}. 
+Section \ref{sec:results} we present our results and observational
+perspectives to finally conclude in Sections \ref{sec:conclusions}. 
 
 
 \section{Simulation, halo catalogs and pairs}
@@ -120,7 +142,7 @@ discussion and conclusion in Sections \ref{sec:discussion} and
 We use the Bolshoi Run, a cosmological DM only simulation over a cubic
 volume of 250 comoving \hMpc on a side. The simulation uses the ART code to
 follow the evolution of  a dark matter density field sampled with
-$2024^3$ from $z=80$ to $z=0$ [...]. The cosmology used  corresponds
+$2048^3$ from $z=80$ to $z=0$ [...]. The cosmology used  corresponds
 to  the spatially flat concordance model with the following
 parameters:  the density parameter for matter (dark matter$+$baryons)
 $\Omega_m=0.27$, the density parameter for baryonic matter
