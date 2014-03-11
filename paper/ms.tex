@@ -81,7 +81,7 @@ statistical test of  $\Lambda$CDM.
 \section{Introduction}
 
 
-The Bullet Cluster (massive cluster of galaxies \bulla) provided a new
+The Bullet Cluster (\bulla) provided a new
 kind of observational evidence for the existence of dark matter
 \citep{Markevitch2004,Clowe2006}. Quantifying the displacement between
 dark matter and the dominant baryonic component (hot X-ray emitting gas)
@@ -202,8 +202,9 @@ position and velocity vectors of the sub-halo in a frame of reference
 where the main halo is at rest; thus
 $\vec{v{}}=\vec{v}_{sub}-\vec{v}_{halo}$ and
 $\vec{r}=\vec{r}_{sub}-\vec{r}_{halo}$, where the subscripts $host$
-and $sub$ refer to the host and sub-halo in the frame of reference of
-the simulation, respectively. 
+and $sub$ refer to the position of the minium of potential for the
+host and sub-halo in the frame of reference of the simulation,
+respectively.  
 
 The angle between these two vectors can be characterized by, 
 \begin{equation}
@@ -219,7 +220,11 @@ while $|\mu|\approx 0$ describes a grazing trajectory.
 The geometrical configuration can be further described by the
 following quantities. The circular velocity of each component, $V_{\rm
   c,host}$ for the host and $V_{\rm c, sub}$ for the sub-halo and the
-size of the host halo $R_{\rm vir}$.
+size of the host halo $R_{\rm vir}$. Another useful quantity computed
+in the simulation is the distance between the minium of potential for
+the host halo and its center of mass, $X_{\rm
+  off}=||\vec{r}_{min}-\vec{r}_{cm}||/R_{\rm vir}$ which serves as a
+measurement of how perturbed is the host halo.
 
 As a zero-th order approximation, in this paper we work with three
 quantities that are available from observations of Bullet-like
@@ -271,15 +276,14 @@ kind of interactions observed in the Bolshoi Run,
 \end{center}
 \caption{
   Integrated probability distribution for the displacement
-  between the host halo and its largest sub-halo. The left panel
+  between the center of the host halo and its dominant sub-halo. The left panel
   shows the results in terms of the physical displacements while
   the right panel shows the displacements normalized by the virial radius of
-  the host halo. The continuous line corresponds to the halos in the
-  group sample $V_{\rm circ,host}>700\kms$ and the dashed lines to the
-  sample $V_{\rm circ,host}<700\kms$.
-  The vertical lines corresponds to mean estimate separation 
-  between the two dark matter clumps in the results reported by
-  \citet{Gastaldello} for the group SL2S J08544-0121. Between $50\%$
+  the host halo. The continuous (dashed) line corresponds to the halos in the
+  cluster (group).
+  The vertical lines shows the mean and uncertainties in the estimated
+  separation  between the two dark matter clumps in the results reported by
+  \citet{Gastaldello} for the \bullg. Between $50\%$
   to $60\%$ of the groups show a displacement equal or larger than
   this observational benchmark.}
 \label{fig:displacement}
@@ -291,15 +295,12 @@ kind of interactions observed in the Bolshoi Run,
 \end{center}
 \caption{2D histogram in the plane $V_{\rm c,sub}/V_{\rm
     c,host}$-$d_{2D}$. The left panel corresponds to clusters and the
-  right panel to groups. The circle with error bars corresponds to
+  right panel to groups. The star with error bars corresponds to
   \bullg data reported from \citet{2013A&A...552A..80M} and
   \citet{Gastaldello}. The data used to construct the histograms
   integrates the objects at all redshifts. }
 \label{fig:mass_displacement}
 \end{figure*}
-
-
-
 
 The main result of this paper is summarized in Figure
 \ref{fig:displacement}, it presents the integrated
@@ -313,36 +314,36 @@ populations; groups with $300\kms < V_{\rm c, host}<700\kms$ and
 clusters with $V_{\rm c,host}>700\kms$. Additionally, this is
 presented for all redshifts $z=0.0, 0.25, 0.5$ and $1.0$. 
 
-The panel with the physical displacements also shows a vertical stripe
-with the estimated displacement for the Bullet-group reported by
-\cite{Gastaldello}. Considering this system as consistent withe the
-groups sample we see that a fraction of $\sim 15\pm 2\%$ of the groups
-should present a displacement equal or larger than the one estimated
-for \bullg, this fraction is close to $45\pm2\% $. The panel with the
-normalized displacements shows a  distribution that can be considered
-close to universal in the sense that the two samples (groups and
-clusters) at all redshifts present a similar trend.[...]
+The panel with the projected 2D physical displacements also shows a
+vertical stripe with the estimated displacement for the Bullet-group reported by
+\cite{Gastaldello}. In the group sample we see that a fraction of
+$50\%$ to $60\%$  should present a displacement equal than the
+estimate for \bullg; in the cluster sample this fraction increases to
+$80\%$-$85\%$. This fraction is naturally higher in more massive
+systems because they are larger in size. Normalizing the displacements
+by the virial radius, right panel Figure \ref{fig:displacement}, we
+see that the distribution is the same regardless of the sample and the
+redshift.
 
 Figure \ref{fig:mass_displacement} shows 2D histograms in a plane
-composed by the ratio of the two circular velocities $V_{\rm c,
-  sub}/V_{\rm c, host}$ and the physical displacements. This is
-revealing because these two quantities can be constrained by
-observations. The displacement is a direct observable, while the ratio
-of the circular velocities can be estimated from lensing studies or
-approximated by the ratio of the total galaxy luminosity associated
-with the galaxy peaks.
+defined by the ratio of the two circular velocities $V_{\rm c,
+  sub}/V_{\rm c, host}$ and the projected 2D physical displacements;
+quantities that can be constrained by observations. The displacement
+is a direct observable, while the ratio of the circular velocities can
+be estimated from lensing studies or approximated by the ratio of the
+total galaxy luminosity associated with the galaxy peaks or by a
+lensing reconstruction. 
 
 To construct this figure we co-add all the halos in the sample (left,
-groups; right, clusters) at all redshifts. We stack the data because
-we do not observe any strong time evolution, additionally this allows
-us to increase the signal in each bin. Overplotted there is an circle
-with error bars that represents the observational estimates for the
-system \bullg using the fraction in velocity dispersion in
-the line-of-sigth of the group SL2S SJ08544-0121
-($\sigma_{host}=341^{+43}_{-109}$\kms and
+clusters; right, groups) at all redshifts. We stack the data because
+we do not observe any strong redshift dependence, additionally this allows
+us to increase the signal in each bin. We overplot a star with error
+bars that represents the observational estimates for the system
+\bullg\ using the fraction in velocity dispersion in the line-of-sigth
+of the group SL2S SJ08544-0121 ($\sigma_{host}=341^{+43}_{-109}$\kms and
 $\sigma_{sub}=185^{+30}_{-62}$\kms) reported by
 \citet{2013A&A...552A..80M} and the DM displacement inferred from the
-data presented by \cite{Gastaldello}.
+data presented by \cite{Gastaldello}.  
 
 
 \subsection{Relative Velocities}
