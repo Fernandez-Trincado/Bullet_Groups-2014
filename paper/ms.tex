@@ -27,7 +27,7 @@
 \newcommand{\kms}{{\ifmmode{{\mathrm{\,km\ s}^{-1}}}\else{\,km~s$^{-1}$}\fi}}
 \newcommand{\bullb}{MACS J0025.4-1222}
 \newcommand{\bulla}{1E0657---56} 
-\newcommand{\bullg}{SL2S J08544-0121~}
+\newcommand{\bullg}{SL2S J08544-0121}
 \shorttitle{Bullet Groups}
 \shortauthors{Fern\'andez-Trincado et al.}
 
@@ -51,29 +51,27 @@
 \begin{abstract}
 
 We estimate the expected distribution of displacements between the two
-dominant density peaks in dark matter halos simulated in a full
-cosmological context. We use as a benchmark the
+dominant dark matter density peaks and between baryons and dark matter
+in halos simulated within a full cosmological context. We use as a benchmark the
 observation of \bullg, which is the lowest mass system observed so far
 featuring a bi-modal dark matter distribution with a dislocated 
-baryonic component. The study extends previous theoretical studies by
-simulating two samples: groups and clusters. We find that 50\% to 60\%
+baryonic component. We extend previous results by
+studying two halo samples: groups and clusters. We find that 50\% to 60\%
 of the dark matter halos with circular velocities in the range
 $300\kms$ to $700\kms$ (groups) show multimodal morphologies with
 displacements between the dark matter clumps equal or larger than
-$133\pm21$\hkpc observed in \bullg. For dark matter halos with
+$133\pm21$\hkpc as observed in \bullg. For dark matter halos with
 circular velocities larger than $700\kms$ (clusters) this fraction
 rises to $80\%$ to $85\%$. Using the same simulation we estimate the
 dark matter-to-baryon spatial separation and find that $0.1\%$ to
-$1.0\%$ of the low mass systems should present separations equal or
+$1.0\%$ of the groups should present separations equal or
 larger than $87\pm 14$\hkpc corresponding to our observational
-benchmark; for halos with circular velocities larger than $700\kms$
-this fraction is in the range of $4\%$ to $10\%$, consistent with
-previous studies of dark matter to baryon separations in clusters. The
-extension of the theoretical predictions and observational results
-towards low mass Bullet-like configurations, i.e. larger abundance of
-systems,  opens up the possibility for a new statistical test of
-$\Lambda$CDM.  
-
+benchmark; for clusters this fraction is in the range of $4\%$ to
+$10\%$, consistent with previous studies of dark matter to baryon
+separations. The extension of the theoretical predictions and
+observational results towards low mass Bullet-like configurations,
+i.e. larger abundance of systems,  opens up the possibility for a new
+statistical test of  $\Lambda$CDM.  
 \end{abstract}
 
 \begin{keywords}
@@ -128,7 +126,7 @@ simulation with such a resolution that allows us to identify
 multi-modal dark matter distributions in hosts with circular velocities
 larger than $300$\kms.  
 
-This paper is organized as the follows. In Section
+This Letter is organized as the follows. In Section
 \ref{sec:simulation} we present the simulation and the halo catalogs
 used in this work. We continue in Section \ref{sec:setup} with the
 geometry of the problem at hand and the measurements setup. Next in
@@ -140,35 +138,59 @@ perspectives to finally conclude in Sections \ref{sec:conclusions}.
 \label{sec:simulation}
 
 We use the Bolshoi Run, a cosmological DM only simulation over a cubic
-volume of 250 comoving \hMpc on a side. The simulation uses the ART code to
-follow the evolution of  a dark matter density field sampled with
-$2048^3$ from $z=80$ to $z=0$ [...]. The cosmology used  corresponds
+volume of 250\hMpc comoving on a side. The simulation uses the ART code to
+follow the evolution of a dark matter density field sampled with
+$2048^3$ from $z=80$ to $z=0$. The cosmology used  corresponds
 to  the spatially flat concordance model with the following
-parameters:  the density parameter for matter (dark matter$+$baryons)
+parameters:  the density parameter for matter (dark matter and baryons)
 $\Omega_m=0.27$, the density parameter for baryonic matter
 $\Omega_b=0.0469$, the density parameter for dark energy
 $\Omega_{\Lambda}=0.73$, the Hubble parameter $h=0.7$, the
 normalization of the Power spectrum $n=0.95$ and the amplitude of mass
-density fluctuation (at redshift z$=$0) $\sigma_8=0.82$.  The number
-of particles used for each of the DM component was $2048^3$, resulting
-in a mass resolution of $1.35 \times 10^8$
-M$_{\odot}$h$^{-1}$. \citet{2011ApJ...740..102K}.  
+density fluctuation (at redshift z$=$0) $\sigma_8=0.82$.  These
+cosmological parameters are consistent with the nine-year Wilikinson
+Microwave Anisotropy Probe (WMAP) results \citep{hinshaw_etal13}. A
+detailed presentation of the simulation can be found in
+\citet{2011ApJ...740..102K}.     
 
-We use halo catalogs constructed using the BDM algorithm. [...] 
-All the raw data used in this Letter is available through the
-Multidark database \footnote{\texttt{www.multidark.org}}
-\citep{Riebe2013}.  
 
-In the snapshots at redshift $z=0.0,0.25, 0.5$ and $1.0$ there are
-$10041, 10346, 10554,$ and $10382$ host halos with circular velocities
-$V_{\rm c}\geq 300$\kms; and $157853, 177331, 195072, 225188$
-sub-halos with circular velocities $V_{\rm c}\geq 75$\kms,
-respectively. These two sets of halos constitute the basis for our
-analysis. 
+The number of particles used for each of the DM component was
+$2048^3$, resulting in a mass resolution of $1.35 \times 10^8$
+M$_{\odot}$h$^{-1}$. The completeness limit in this simulation is set
+for halos with $100$ particles corresponding to a mass of
+$1.35\times10^{10}$\hMsun or a maximum circular velocity $V_{c}$ of
+$50$\kms. 
 
-For each host halo we find its most massive sub-halo. Each pair
-host/sub-halo is considered as a potential Bullet system and is kept
-got the analysis described in the next section.
+We use halo catalogs constructed using the Bound Density Maxima (BDM)
+algorithm \citep{BDM,BDMb}. To define the radius of a halo we use a
+density threshold of 360 times the mean density of the Universe, for 
+different redshifts we use the overdensity criterion by
+\cite{Bryan1998}. An important feature of BDM is that it allows us to
+detect sub-halos inside larger virialized structures. 
+
+
+All the raw data used in this Letter is
+available through the Multidark database \footnote{\texttt{www.multidark.org}}
+\citep{Riebe2013}.  Furthermore, in order to facilitate the
+reproducibility and reuse of our results we have made available all
+the data and the source code available in a public
+repository \footnote{\texttt{https://github.com/Fernandez-Trincado/Bullet\_Groups-2014}}.
+
+In this Letter we make a study at four different redhifts $z=0.0,0.25,
+0.5$ and $1.0$. First, we select all the host halos (i.e. halos that
+are not inside a larger halo) with circular velocities $V_{\rm c}\geq
+300$\kms. Then, we select the sub-halos with circular velocities
+$V_{\rm c}\geq 75$\kms. The objective is to use this sub-halos as the
+tracer of the sub-dominant dark matter clump in the merging cluster,
+i.e. the bullets.
+
+For the redshifts $z=0.0,0.25,
+0.5$ and $1.0$ we find $10041, 10346, 10554$ and $10382$ host halos
+and $157853, 177331, 195072, 225188$ sub-halos, respectively. These
+two sets (host halos and sub-halos) constitute the basis for our
+analysis. We find now for each host halo we its most massive sub-halo. Each pair
+host halo/sub-halo is considered as a potential Bullet system and is
+kept for the analysis described in the next Section. 
 
 \section{Bullet Geometry and Measurement Setup}
 \label{sec:setup}
@@ -452,10 +474,6 @@ description within a factor of $\sim 2$ of
 
 
 
-\subsection{Reproducibility of our results}
-In order to facilitate the reproducibility and reuse of our results we
-have made available all the data and the source code available in a public
-repository\footnote{\texttt{https://github.com/Fernandez-Trincado/Bullet\_Groups-2014}.} 
 
 \section{Observational Implications}
 \label{sec:observations}
