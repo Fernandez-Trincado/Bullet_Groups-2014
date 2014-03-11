@@ -98,8 +98,8 @@ explore possible extensions to the concordance cosmological model
 Since then, other examples of Bullet-like systems have been found; 
 MACS J0025.4-1222 \citep{Bradac2008}, Abell 2744 \citep{Merten2011},
 DLSCL J0916.2+2951 \citep{Dawson2012}, ZwCl 1234.0+02916
-\citep{Dahle2013}. Recently \citep{Gastaldello} observed baryonic-DM
-displacement if $124\pm 20$ kpc in a group-like system with a total
+\citep{Dahle2013}. Recently \citep{Gastaldello} observed a baryonic-DM
+displacement if $124\pm 20$ kpc in \bullg, a group-like system with a total
 mass $2.4\pm 0.6 \times 10^{14}$\Msun. Systems of this mass are
 $\sim10$ times more abundant than cluster systems in the mass range of
 the Bullet Cluster $>10^{15}$\hMsun, this opens up the possibility of
@@ -184,59 +184,70 @@ $V_{\rm c}\geq 75$\kms. The objective is to use this sub-halos as the
 tracer of the sub-dominant dark matter clump in the merging cluster,
 i.e. the bullets.
 
-For the redshifts $z=0.0,0.25,
-0.5$ and $1.0$ we find $10041, 10346, 10554$ and $10382$ host halos
-and $157853, 177331, 195072, 225188$ sub-halos, respectively. These
-two sets (host halos and sub-halos) constitute the basis for our
-analysis. We find now for each host halo we its most massive sub-halo. Each pair
-host halo/sub-halo is considered as a potential Bullet system and is
-kept for the analysis described in the next Section. 
+For the redshifts $z=0.0,0.25, 0.5$ and $1.0$ we find $10041, 10346,
+10554$ and $10382$ host halos and $157853, 177331, 195072, 225188$
+sub-halos, respectively. These two sets (host halos and sub-halos)
+constitute the basis for our analysis. We find now for each host halo
+we its most massive sub-halo. Each pair host halo/sub-halo is
+considered as a potential Bullet system and is kept for the analysis
+described in the next Section.  
 
 \section{Bullet Geometry and Measurement Setup}
 \label{sec:setup}
 
-The Bullet groups is composed by two halos. the host halo and the sub
-halo. This configuration is described by the position and velocity of
-the sub-halo in a frame of reference where the main halo is at rest;
-thus  $\vec{v{}}=\vec{v}_{sub}-\vec{v}_{halo}$ and 
+The Bullet-like configurations are composed by two dark matter
+structures: the host halo and the dominant sub-halo. We describe the
+kinematics of this configuration by the 
+position and velocity vectors of the sub-halo in a frame of reference
+where the main halo is at rest; thus
+$\vec{v{}}=\vec{v}_{sub}-\vec{v}_{halo}$ and
 $\vec{r}=\vec{r}_{sub}-\vec{r}_{halo}$, where the subscripts $host$
 and $sub$ refer to the host and sub-halo in the frame of reference of
-the simulation, respectively.
+the simulation, respectively. 
 
-The angle between these two vectors characterized by, 
+The angle between these two vectors can be characterized by, 
 \begin{equation}
   \mu\equiv
   \cos(\theta)=\frac{\vec{v{}}\cdotp{}\vec{r}}{\left\|\vec{v}{}\right\|
-    \left\|\vec{r}\right\|} 
+    \left\|\vec{r}\right\|} .
  \end{equation} 
 %
-encodes the geometry of the collision, i.e. cases of $|\mu|\approx 1$
-can be considered as head-on collisions while $|\mu|\approx 0$
-describe a grazing trajectory.
+This encodes relevant information to describe the collision,
+i.e. cases of $|\mu|\approx 1$ can be considered as head-on collisions
+while $|\mu|\approx 0$ describes a grazing trajectory.
 
-The bullet-like encounter can be instantaneously described by
-quantities the following quantities the circular velocity of the host
-and the sub-halo, $V_{\rm c,host}$ and $V_{\rm c,  sub}$; the size of
-the host halo $R_{\rm vir}$; the relative position and velocity of the
-substructure, $\vec{v}$ and $\vec{r}$; and the angle between the
-position and velocity $\mu$. 
+The geometrical configuration can be further described by the
+following quantities. The circular velocity of each component, $V_{\rm
+  c,host}$ for the host and $V_{\rm c, sub}$ for the sub-halo and the
+size of the host halo $R_{\rm vir}$.
 
-As a first approximation there are two quantities that are available
-from observations of these Bullet-like systems. The projected distance
-between two dominant dark matter clumps and the ratio of the
-galaxies luminosities associated to them. From the simulation point
-of view this can be translated into the 2D projected values of
-$||\vec{r}||$, its value relative to the virial radius $D_{\rm off}=
-||\vec{r}||_{\rm 2D}/R_{\rm vir}$ and the ratio of the circular velocities
-of the two clumps $V_{\rm c,sub}/V_{\rm c,host}$. In a higher degree
-of detail, in order to gain better insight we use
-the sub-structure velocity as a fraction of the host's circular
-velocity, $||\vec{r}||/V_{\rm c, host}$, as a measure of the the strength
-of the interaction.  Finally, we also measure the geometry of each
-interaction through the values for $\mu$.
+As a zero-th order approximation, in this paper we work with three
+quantities that are available from observations of Bullet-like
+systems. The projected distance between two dominant DM clumps, the
+projected distance between the DM-baryonic clumps and the ratio of the galaxies
+luminosities associated to the DM clumps. 
+
+From the simulation point of view, the first quantity can be
+translated into the 2D projected values of $||\vec{r}||$ and its value
+relative to the virial radius $D_{\rm   off}= ||\vec{r}||_{\rm
+  2D}/R_{\rm vir}$. The last quantity can be approximated by ratio of
+the circular velocities of the two clumps $V_{\rm c,sub}/V_{\rm
+  c,host}$ which under conditions of constant mass-to-light ratios
+should be equal to the square root of the luminosity ratio. The second
+quantity is not directly available from a DM-only simulation but, as we
+show in the Results section, can be  inferred from the available
+information. 
 
 
-All the physical quantities described above can be used to describe
+In order to gain better insight, we use two
+quantities that are not readily available from observations but can be
+measured in the simulation. The first one is the sub-structure
+velocity as a fraction of the host's circular velocity, $||\vec{v}||/V_{\rm c, host}$, as a measure of the the strength of the
+merger.  The second is $\mu$ to measure the geometry (head-on
+vs. grazing) of each collision.
+
+
+The physical quantities described above can be used to describe
 the three main stages in a bullet-like encounter. First, the sub-halo
 crosses the virial radius of the host halo starting a head on
 collision, $||\vec{r}||/R_{\rm vir}\approx 1$ and
@@ -244,9 +255,8 @@ $\mu\approx<0.0$. Second, as the sub-halo crosses for the first time
 the center of the host halo $||\vec{r}||/R_{\rm vir} < 1.0$ and
 $\mu>0.0$. Third, as the sub-halo reaches apogee and comes back to the
 center of the halo $||\vec{r}||/R_{\rm vir} < 1.0$ and $\mu<0.0$. We use
-this quantities in Section XXX to fully characterize the different
-kind of interactions observed in the Bolshoi simulation. 
-
+this quantities in the enxt section to fully characterize the different
+kind of interactions observed in the Bolshoi Run,
 
 
 \section{Results}
