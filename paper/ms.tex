@@ -127,7 +127,7 @@ systems with a Bullet configuration  (large DM-baryon
 displacements). To this end we use a high resolution N-body
 cosmological simulation (Bolshoi) that allows us to find  multi-modal
 dark matter distributions in hosts with circular velocities larger
-than $300$\kms ($\sim 1.0\times 10^{13}\hMsun$).  
+than $300$\kms ($\sim 1.0\times 10^{13}\hMsun$).
 
 This Letter is organized as follows. In Section
 \ref{sec:simulation} we present the simulation and the halo catalogs
@@ -142,7 +142,7 @@ perspectives to finally conclude in Section \ref{sec:conclusions}.
 We use the Bolshoi Run, a cosmological DM only simulation over a cubic
 volume of 250\hMpc comoving on a side. The simulation uses the ART
 code \citep{Kravtsov1997} to follow the evolution of a dark matter
-density field sampled with $2048^3$ from $z=80$ to $z=0$. The
+density field from $z=80$ to $z=0$ sampled with $2048^3$  particles. The
 cosmology used  corresponds to  the spatially flat concordance model
 with the following parameters:  the density parameter for matter (dark
 matter and baryons) $\Omega_m=0.27$, the density parameter for baryonic matter
@@ -152,108 +152,111 @@ normalization of the Power spectrum $n=0.95$ and the amplitude of mass
 density fluctuation (at redshift z$=$0) $\sigma_8=0.82$.  These
 cosmological parameters are consistent with the nine-year Wilikinson
 Microwave Anisotropy Probe (WMAP) results \citep{hinshaw_etal13}. A
-detailed presentation of the simulation can be found in
-\citet{2011ApJ...740..102K}.     
+detailed presentation of the simulation can be found in \citet{2011ApJ...740..102K}.     
 
+This results in a mass resolution of $1.35 \times 10^8$
+M$_{\odot}$h$^{-1}$ for each computational particle. The completeness
+limit in this simulation is set for halos with $100$ particles
+corresponding to a mass of $1.35\times10^{10}$\hMsun\ or a maximum
+circular velocity $V_{c}$ of $50$\kms. 
 
-The number of particles used for each of the DM component was
-$2048^3$, resulting in a mass resolution of $1.35 \times 10^8$
-M$_{\odot}$h$^{-1}$. The completeness limit in this simulation is set
-for halos with $100$ particles corresponding to a mass of
-$1.35\times10^{10}$\hMsun\ or a maximum circular velocity $V_{c}$ of
-$50$\kms. 
-
-We use halo catalogs constructed using the Bound Density Maxima (BDM)
+We use DM halo catalogs constructed using the Bound Density Maxima (BDM)
 algorithm \citep{BDM,BDMb}. To define the radius of a halo we use a
-density threshold of 360 times the mean density of the Universe (or
+density threshold of 360 times the mean density of the Universe (
 200 times the critical density), for different redshifts we use the
 overdensity criterion by \cite{Bryan1998}. An important feature of BDM
 is that it allows us to detect sub-halos inside larger virialized
 structures.  
 
 
-All the raw data used in this Letter is available through the
-Multidark database \footnote{\texttt{www.multidark.org}}
+All the raw data used in this Letter is available through the Multidark database \footnote{\texttt{www.multidark.org}}
 \citep{Riebe2013}.  Furthermore, in order to facilitate the
 reproducibility and reuse of our results we have made available all
 the data and the source code available in a public
-repository \footnote{\texttt{https://github.com/Fernandez-Trincado/Bullet\_Groups-2014}}. 
+repository \footnote{\texttt{https://github.com/Fernandez-Trincado/Bullet\_Groups-2014}}.
 
-In this Letter we make a study at four different redshifts $z=0.0,0.25,
-0.5$ and $1.0$. First, we select all the host halos (i.e. halos that
-are not inside a larger halo) with circular velocities $V_{\rm c}\geq
-300$\kms ($\geq 1\times 10^{13} \hMsun$). Then, we select the sub-halos with
+To construct our main halo sample we follow three
+steps. Firstly, we select all the host halos (i.e. halos that are not
+inside a larger halo) with circular velocities $V_{\rm c}\geq 300$\kms
+($\geq 1\times 10^{13} \hMsun$). Secondly, we select the sub-halos with
 circular velocities $V_{\rm c}\geq 75$\kms ($\geq 5\times
-10^{10}\hMsun$). The objective is to use this sub-halos as the tracer
-of the sub-dominant dark matter clump in the merging cluster, i.e. the
-bullets. 
+10^{10}\hMsun$). Thirdly, we associate each host halo to its most
+massive sub-halo. 
 
-These two sets (host halos and sub-halos)
-constitute the basis for our analysis. We associate each host halo
-to its most massive sub-halo, each one of these pairs (host \& sub-halo)
-is considered as a potential Bullet system and is kept for the
-analysis described in the next Section. The number of systems at each
-redshift is listed on the first arrow of Table \ref{table:numbers}.
+
+Each one of the pairs (host \& sub-halo) is considered as a
+potential Bullet system and is kept for the analysis described in the
+next Section. We use the sub-halos as the tracer of the sub-dominant
+dark matter clump in the merging cluster, i.e. the bullets.  
+
+
+Finally, we split the sample into two  populations; groups with
+$300\kms < V_{\rm c, host}<700\kms$ and clusters with $V_{\rm
+  c,host}>700\kms$. These two samples are constructed at four redshifts:
+$z=0.0, 0.25, 0.5$ and $1.0$.  The number of pairs at each redshift in
+each population is listed on the first arrow of Table
+\ref{table:numbers}. 
+
+\ref{table:numbers}.  
+
 
 \section{Bullet Geometry and Measurement Setup}
 \label{sec:setup}
 
-The Bullet-like configurations are composed by two dark matter
-structures: the host halo and the dominant sub-halo. We describe the
-kinematics of this configuration by the 
+Bullet-like configurations have two dominand dark matter structures:
+the host halo and the dominant sub-halo. We describe the kinematics of this configuration by the 
 position and velocity vectors of the sub-halo in a frame of reference
 where the main halo is at rest; thus
-$\vec{v{}}=\vec{v}_{sub}-\vec{v}_{halo}$ and
-$\vec{r}=\vec{r}_{sub}-\vec{r}_{halo}$, where the subscripts $host$
+$\vec{v{}}=\vec{v}_{\rm sub}-\vec{v}_{\rm host}$ and
+$\vec{r{}}=\vec{r}_{\rm sub}-\vec{r}_{\rm host}$, where the subscripts $host$
 and $sub$ refer to the position of the minium of potential for the
-host and sub-halo in the frame of reference of the simulation,
-respectively.  
+host and sub-halo in the frame of reference of the simulation, respectively.  
 
-The angle between these two vectors can be characterized by, 
+The angle between these two vectors can be quantified by, 
 \begin{equation}
   \mu\equiv
   \cos(\theta)=\frac{\vec{v{}}\cdotp{}\vec{r}}{\left\|\vec{v}{}\right\|
     \left\|\vec{r}\right\|} .
  \end{equation} 
 %
-This encodes relevant information to describe the collision,
-i.e. cases of $|\mu|\approx 1$ can be considered as head-on collisions
-while $|\mu|\approx 0$ describes a grazing trajectory.
+This encondes information about the collision, i.e. cases of
+$|\mu|\approx 1$ can be considered as head-on collisions while
+$|\mu|\approx 0$ describes a grazing trajectory.  
 
 The geometrical configuration can be further described by the
 following quantities. The circular velocity of each component, $V_{\rm
   c,host}$ for the host and $V_{\rm c, sub}$ for the sub-halo and the
 size of the host halo $R_{\rm vir}$. Another useful quantity computed
-in the simulation is the distance between the minium of potential for
-the host halo and its center of mass, $X_{\rm
-  off}=||\vec{r}_{min}-\vec{r}_{cm}||/R_{\rm vir}$ which serves as a
-measurement of how much the host halo is perturbed.
+in the simulation is the distance between the minimum of potential for
+the host halo and its center of mass (computed from all the particles
+inside the $R_{\rm vir}$), $X_{\rm off}=||\vec{r}_{min}-\vec{r}_{cm}||/R_{\rm vir}$, which serves as a
+measurement of how much the host halo is perturbed. 
 
-As a zero-th order approximation, in this paper we work with three
-observed quantities for Bullet-like systems. The projected distance
-between two dominant DM clumps, the projected distance between the
-DM-baryonic clumps and the ratio of the mass associated to the DM
-clumps.
+In this letter we work with three quantities that could be inferred
+from observations of Bullet-like systems. The projected distance
+between two dominant DM clumps, $d_{\rm 2D}$; the projected distance
+between the DM-baryonic clumps, $d_{\rm 2D}^{\rm bar}$; and the mass
+ration associated to the two dominant DM clumps.  
 
 From the simulation point of view, the first quantity can be
 translated into the 2D projected values of $||\vec{r}||$ and its value
 relative to the virial radius $D_{\rm   off}= ||\vec{r}||_{\rm
-  2D}/R_{\rm vir}$. The last quantity, the mass ratio, can be
-approximated by ratio of the circular velocities of the two clumps $V_{\rm c,sub}/V_{\rm  c,host}$ which should be equal to the square root of the mass
-ratio. The second quantity, the projected DM-baryon distance, is not
-directly available from a DM-only simulation but, as we show in the
-Results section, can be inferred from the available information.  
- 
-The physical quantities described above can be used to describe
-the three main stages in a bullet-like encounter. First, the sub-halo
-crosses the virial radius of the host halo starting a head on
-collision, $||\vec{r}||/R_{\rm vir}\approx 1$ and
-$\mu\lessapprox<0.0$. Second, as the sub-halo crosses for the first time
-the center of the host halo $||\vec{r}||/R_{\rm vir} < 1.0$ and
-$\mu>0.0$. Third, as the sub-halo reaches apogee and comes back to the
-center of the halo $||\vec{r}||/R_{\rm vir} < 1.0$ and $\mu<0.0$. We use
-these quantities in the next section to fully characterize the different
-kind of interactions observed in the Bolshoi Run,
+  2D}/R_{\rm vir}$. The second quantity, the projected DM-baryon
+distance, is not directly available from a DM-only simulation but can
+be estimated from the data.  The last quantity, the mass ratio, can be
+approximated by ratio of the circular velocities of the two clumps
+$V_{\rm c,sub}/V_{\rm  c,host}$ which should be equal to the square
+root of the mass ratio. 
+
+We also use the physical quantities described above to discriminate
+between grazing trajectories, $|\mu|<0.9$, and Bullet-like collissions
+with $|\mu|\approx 1$. In the latter case we can also distinguish three
+main stages in a such encounter. First, when the sub-halo crosses the
+virial radius of the host halo starting a head on collision, $D_{\rm
+  off} \approx 1$ and $\mu\approx -1$. Second, as the sub-halo crosses
+for the first time the center of the host halo $D_{\rm off}<1.0$ and
+$\mu\approx 1$. Third, as the sub-halo reaches apogee and comes back
+to the center of the halo $D_{\rm off} < 1.0$ and $\mu< -1$.  
 
 
 \section{Results}
@@ -304,11 +307,7 @@ the displacement in physical units and the right panel as a fraction
 of the virial radius of the host halo. 
 
 Figure \ref{fig:displacement} shows the results for two different
-populations; groups with $300\kms < V_{\rm c, host}<700\kms$ and
-clusters with $V_{\rm c,host}>700\kms$. Additionally, this is
-presented for all redshifts $z=0.0, 0.25, 0.5$ and $1.0$. 
-
-The panel with the projected 2D physical displacements also shows a
+populations at all redshifts. The panel with the projected 2D physical displacements also shows a
 vertical stripe with the estimated displacement for the Bullet-group reported by
 \cite{Gastaldello}. In the group sample we see that a fraction of
 $40\%$ to $60\%$  should present a displacement equal than the
