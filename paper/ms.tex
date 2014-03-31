@@ -52,27 +52,27 @@
 
 We estimate the expected distribution of displacements between the two
 dominant dark matter (DM) peaks (DM-DM displacements) and between
-DM and gaseous baryon peak (DM-baryon displacements) in DM halos 
+DM and gaseous baryon peak (DM-gas displacements) in dark matter halos 
 with masses larger than $10^{13}$\hMsun. We use as a benchmark the
 observation of \bullg, which is the lowest mass system ($1.0\times
 10^{14}$\hMsun) observed so far
 featuring a bi-modal dark matter distribution with a dislocated
-baryonic component. We find that $(50 \pm 10)\%$ of the dark matter
+gas component. We find that $(50 \pm 10)\%$ of the dark matter
 halos with circular velocities in the range $300\kms$ to $700\kms$
 (groups) show DM-DM displacements equal or larger than $186 \pm
 30$\hkpc as observed in \bullg. For dark matter halos with circular
 velocities larger than $700\kms$ (clusters) this fraction rises to
-$(70 \pm 10)\%$. Using the same simulation we estimate the DM-baryon
+$(70 \pm 10)\%$. Using the same simulation we estimate the DM-gas
 displacements and find that $0.1$ to $1.0\%$ of the groups should
 present separations equal or larger than $87\pm 14$\hkpc corresponding
 to our observational benchmark; for clusters this fraction rises to
 $(7\pm 3)\%$, consistent with previous studies of dark matter to
 baryon separations. Considering both constraints on the DM-DM and
-DM-baryon displacements we find that the number density of groups
+DM-gas displacements we find that the number density of groups
 similar to \bullg\ is $\sim 6.0\times 10^{-7}$ Mpc$^{-3}$, three times
 larger than the estimated value for clusters. These results open up
 the possibility for a new statistical test of $\Lambda$CDM by looking
-for collision features in low mass clusters and groups. 
+for DM-gas displacements in low mass clusters and groups. 
 \end{abstract}
 
 \keywords{dark matter --- galaxies: clusters: individual (SL2S
@@ -99,7 +99,7 @@ extensions to the concordance cosmological model
 Since then, other examples of Bullet-like systems have been found; 
 MACS J0025.4-1222 \citep{Bradac2008}, Abell 2744 \citep{Merten2011},
 DLSCL J0916.2+2951 \citep{Dawson2012}, ZwCl 1234.0+02916
-\citep{Dahle2013}. Recently \citep{Gastaldello} observed a DM-baryon
+\citep{Dahle2013}. Recently \citep{Gastaldello} observed a DM-gas
 displacement of $87\pm 14$\hkpc and a DM-DM separation of $186\pm
 30$\hkpc in \bullg, a group-like system with a total
 mass $2.4\pm 0.6 \times 10^{14}\Msun$ found in the the Strong Lensing
@@ -112,7 +112,7 @@ should open up the possibility of finding Bullet Groups in large
 numbers to test $\Lambda$CDM. However, a larger abundance of small
 mass systems has to be weighted by the probability of being in a
 merger and  presenting a large displacement between the DM and
-baryonic components.  These two conditions (merger rates, maximum
+gaseous components.  These two conditions (merger rates, maximum
 possible displacement) are a funcion of DM halo mass in $\Lambda$CDM
 cosmologies.  A detailed statistical study to estimate the DM-gas
 displacements of Bullets has been performed for clusters
@@ -121,18 +121,18 @@ displacements of Bullets has been performed for clusters
 In this Letter we extend such study for systems in the group mass
 scale. We measure the abundance of DM systems with a multi-modal
 morphology (large DM-DM displacements) and estimate the amount of
-systems with a Bullet-like configuration  (large DM-baryon
+systems with a Bullet-like configuration  (large DM-gas
 displacements). To this end we use a high resolution N-body
-cosmological simulation (Bolshoi) that allows us to find  multi-modal
+cosmological simulation (Bolshoi) that allows us to find multi-modal
 dark matter distributions in hosts with circular velocities larger
 than $300$\kms ($\sim 1.0\times 10^{13}\hMsun$).
 
 This Letter is organized as follows. In Section
-\ref{sec:simulation} we present the simulation and the halo catalogs
-used in this work. We continue in Section \ref{sec:setup} with the
-geometry of the problem at hand and the measurement setup. Next in
-Section \ref{sec:results} we present our results and observational
-perspectives to finally conclude in Section \ref{sec:conclusions}. 
+\ref{sec:simulation} we present the simulation and the halo
+catalogs. We continue in Section \ref{sec:setup} with the  geometry of
+the problem at hand and the measurement setup. Next in   Section
+\ref{sec:results} we present our results and observational
+perspectives to finally conclude in Section \ref{sec:conclusions}.  
 
 \section{Simulation, halo catalogs and pairs}
 \label{sec:simulation}
@@ -146,11 +146,12 @@ with the following parameters:  the density parameter for matter (dark
 matter and baryons) $\Omega_m=0.27$, the density parameter for baryonic matter
 $\Omega_b=0.0469$, the density parameter for dark energy
 $\Omega_{\Lambda}=0.73$, the Hubble parameter $h=0.7$, the
-normalization of the Power spectrum $n=0.95$ and the amplitude of mass
-density fluctuation (at redshift z$=$0) $\sigma_8=0.82$.  These
+slope of the primordial power spectrum $n=0.95$ and the amplitude of mass
+density fluctuations (at redshift z$=$0) $\sigma_8=0.82$.  These
 cosmological parameters are consistent with the nine-year Wilikinson
 Microwave Anisotropy Probe (WMAP) results \citep{hinshaw_etal13}. A
-detailed presentation of the simulation can be found in \citet{2011ApJ...740..102K}.     
+detailed presentation of the simulation can be found in
+\citet{2011ApJ...740..102K}. 
 
 This results in a mass resolution of $1.35 \times 10^8$
 M$_{\odot}$h$^{-1}$ for each computational particle. The completeness
@@ -164,29 +165,28 @@ density threshold of 360 times the mean density of the Universe. An
 important feature of BDM is that it allows us to detect sub-halos
 inside larger virialized structures.     
 
-All the raw data used in this Letter are available through the Multidark database \footnote{\texttt{www.multidark.org}}
+All the raw data used in this Letter are available through the
+Multidark database \footnote{\texttt{www.multidark.org}}
 \citep{Riebe2013}.  Furthermore, in order to facilitate the
 reproducibility and reuse of our results we have made available all
 the data and the source code available in a public
-repository \footnote{\texttt{https://github.com/Fernandez-Trincado/Bullet\_Groups-2014}}.
-
-To construct our main halo sample we follow three
-steps. Firstly, we select all the host halos (i.e. halos that are not
-inside a larger halo) with circular velocities $V_{\rm c}\geq 300$\kms
-($\geq 1\times 10^{13} \hMsun$). Secondly, we select the sub-halos with
-circular velocities $V_{\rm c}\geq 75$\kms ($\geq 5\times
+repository \footnote{\texttt{https://github.com/Fernandez-Trincado/Bullet\_Groups-2014}}. 
+ 
+To construct our main halo sample we follow three steps. Firstly, we
+select all the host halos (i.e. halos that are not inside a larger
+halo) with circular velocities $V_{\rm c}\geq 300$\kms ($\geq 1\times
+10^{13} \hMsun$). Secondly, we select the sub-halos with circular
+velocities $V_{\rm c}\geq 75$\kms ($\geq 5\times
 10^{10}\hMsun$). Thirdly, we associate each host halo to its most
-massive sub-halo. 
-
+massive sub-halo.  
 
 Each one of the pairs (host \& sub-halo) is considered as a
 potential Bullet system and is kept for the analysis described in the
-next Section. We use the sub-halos as the tracer of the sub-dominant
+next Section  by using the sub-halos as the tracer of the sub-dominant
 dark matter clump in the merging cluster, i.e. the bullets.  
 
-
-Finally, we split the sample into two  populations; groups with
-$300\kms < V_{\rm c, host}<700\kms$ and clusters with $V_{\rm
+Finally, we split the sample into two  populations; groups, with
+$300\kms < V_{\rm c, host}<700\kms$; and clusters, with $V_{\rm
   c,host}>700\kms$ ($\geq 8.0\times 10^{13}$\hMsun). These two samples
 are constructed at four redshifts: $z=0.0, 0.25, 0.5$ and $1.0$.  The
 number of pairs at each redshift in each population is listed on the
@@ -198,13 +198,14 @@ first row of Table \ref{table:numbers}.
 \label{sec:setup}
 
 Bullet-like configurations have two dominand dark matter structures:
-the host halo and the dominant sub-halo. We describe the kinematics of this configuration by the 
-position and velocity vectors of the sub-halo in a frame of reference
-where the main halo is at rest; thus
+the host halo and the dominant sub-halo. We describe the kinematics of
+this configuration by the  position and velocity vectors of the
+sub-halo in a frame of reference where the main halo is at rest; thus
 $\vec{v{}}=\vec{v}_{\rm sub}-\vec{v}_{\rm host}$ and
 $\vec{r{}}=\vec{r}_{\rm sub}-\vec{r}_{\rm host}$, where the subscripts $host$
 and $sub$ refer to the position of the minium of potential for the
-host and sub-halo in the frame of reference of the simulation, respectively.  
+host and sub-halo in the frame of reference of the simulation,
+respectively.  
 
 The angle between these two vectors can be quantified by, 
 \begin{equation}
@@ -218,23 +219,23 @@ $|\mu|\sim 1$ can be considered as head-on collisions while
 $|\mu|< 0.9$ describes a grazing trajectory.  
 
 The geometrical configuration can be further described by the
-following quantities. The circular velocity of each component and the
+the circular velocity of each component and the
 size of the host halo $R_{\rm vir}$. Another useful quantity computed
 in the simulation is the distance between the minimum of potential for
 the host halo and its center of mass (computed from all the particles
 inside the $R_{\rm vir}$), $X_{\rm
-  off}=||\vec{r}_{min}-\vec{r}_{cm}||/R_{\rm vir}$, which serves as a measurement of how much the host halo is perturbed. 
+  off}=||\vec{r}_{min}-\vec{r}_{cm}||/R_{\rm vir}$, which serves as a
+measurement of how much the host halo is perturbed.  
 
-In this letter we work with two quantities that could be inferred
+In this Letter we work with two quantities that could be inferred
 from observations of Bullet-like systems. The projected distance
-between two dominant DM clumps, $d_{\rm 2D}$ and the projected distance
-between the DM and the dominand baryonic clumps (in the case of
-clusters this corresponds to the gas), $d_{\rm 2D}^{\rm bar}$.
+between two dominant DM clumps, $d_{\rm 2D}$, and the projected distance
+between the DM and the gas clumps, $d_{\rm 2D}^{\rm bar}$.
 
 From the simulation point of view, the first quantity can be
 translated into the 2D projected values of $||\vec{r}||$ and its value
 relative to the virial radius $D_{\rm   off}= ||\vec{r}||_{\rm
-  2D}/R_{\rm vir}$. The second quantity, the projected DM-baryon
+  2D}/R_{\rm vir}$. The second quantity, the projected DM-gas
 distance, is not directly available from a DM-only simulation but can
 be estimated from the data.  
 
@@ -305,7 +306,7 @@ distributions are similar for the two samples at all redshifts.
 \end{center}
 \caption{2D histograms in the plane $\mu$-$D_{\rm off}$. The left
   panel corresponds to clusters and the right panel to groups. The data
-  used to construct this histogram includes the halos at all redshifts.}
+  used to construct this histogram includes halos at all redshifts.}
 \label{fig:geometry}
 \end{figure*}
 
@@ -324,36 +325,33 @@ second pass through the center of the host halo \citep{Poole2006}.
 The first region has $\mu\sim-1$ and $D_{\rm off}>0.6$, which
 locates the systems where a head-on collision has just started. The
 second region has $\mu\sim 1$ and $D_{\rm off}<0.6$; at this stage
-the collision continues after the first crossing of the host's center,
-the low number of halos with radial infalling velocities and
-displacements $D_{\rm off}>0.6$ suggest that this the maximum range of
+the collision continues after the first crossing of the host's
+center. The low number of halos with radial infalling velocities and
+displacements $D_{\rm off}>0.6$ suggests that this the maximum range of
 radii for the apogee.  The third region corresponds to $\mu\sim-1$
 and $D_{\rm off}<0.6$ that is the the secondary infall after apogee.  
 
-In the next subsection we use the information in this sequence to
-estimate the expected DM-baryon displacement. 
+In the next subsection we use the information in this collision
+sequence to estimate the expected DM-gas displacement. 
 
-
-
-\subsection{DM-baryon Displacements}
+\subsection{DM-gas Displacements}
 \label{sec:baryonic_displacements}
 
 The results we have derived so far apply to multi-modal systems and
-the expected separation between the two dominant dark matter
+their expected separation between the two dominant dark matter
 clumps. However, a non-zero DM-DM displacement does not imply 
-a non-zero DM-baryon displacement. Given that we use a DM only
-simulation, we have to find a way to estimate a DM-baryon displacement
-from the available information.  
+a non-zero DM-gas displacement. We now estimate these displacements
+from the available information in our DM only simulation.
 
-This estimate is based on the different kinds of trajectories and
+Our estimates are based on the different kinds of trajectories and
 collision stages described in previous sections. To start with, we
 consider that systems with $|\mu|<0.9$ describing grazing
-trajectories have a baryonic displacement equal to zero.  In systems
+trajectories have a DM-gas displacement equal to zero.  In systems
 with head-on collissions, $|\mu|>0.9$ the systems with $\mu<-0.9$ and
 large displacements $D_{\rm   off}>0.6$ most probably describe the
-beginning of the interaction and should have baryonic displacements
-equal to zero. In all other cases the DM-baryon displacement
-should be different from zero. We approximate this displacement by
+beginning of the interaction and should have DM-gas displacements
+equal to zero as well. In all other cases the DM-gas displacement
+should be different from zero with the approximated value
 $d_{\rm   2D}^{\rm bar} = X_{\rm off} R_{\rm   vir}$, where $X_{\rm   off}$ is
 the offset computed between the minium of potential and the center of
 mass for each host halo computed from all the matter inside the virial
@@ -363,8 +361,8 @@ radius.
 This simplified model does not take into account that there is a
 fraction of halos with $\mu<-0.9$ and $D_{\rm off}<0.6$ for which the
 collision has not started and should have $d_{2D}^{\rm bar}=0$. A detailed
-modeling of this fraction requires the study of the complete merger
-tree of the halo and sub-halo, a study beyond the scope of this
+modeling of this fraction requires the study of the complete merging
+history  of the halo and sub-halo, a study beyond the scope of this
 Letter. Instead we caution the reader that the derived fraction of
 halos with a displacement $<d_{2D}^{\rm bar}$ must be considered as an
 upper limit. 
@@ -381,13 +379,12 @@ and $8$ times less mass resolution than the Bolshoi Simulation. The
 fit is valid for separations larger than $70$\hkpc, beyond which we
 find that it provides a remarkably good description within a factor of
 $\sim 2$ of our results. This gives us confidence in our approach to
-correctly estimate the expected fraction of groups with a DM-baryon
+correctly estimate the expected fraction of groups with a DM-gas
 displacement. 
-
 
 Finally, from Figure \ref{fig:baryonic_displacements} we see that only a
 fraction of $0.1\%$ to $1\%$ of the groups are expected to have a
-DM-baryon displacement equal or larger than $87\pm 14$\hkpc as
+DM-gas displacement equal or larger than $87\pm 14$\hkpc as
 observed in \bullg. This fraction rises to $4\%$ to $10\%$ in the case
 of clusters, consistent with the results reported by
 \cite{ForeroRomero2010}. 
@@ -413,21 +410,20 @@ simulations. The results are summarized in Table
 in each sample at each redshift. The second row shows the number of
 objects with DM-DM displacements $46\hkpc< d_{\rm 2D}< 350$\hkpc. The
 last row indicates the number of objects in the previous sub-sample
-with DM-baryon displacements $d_{\rm 2D}^{\rm bar}>87$\hkpc. 
+with DM-gas displacements $d_{\rm 2D}^{\rm bar}>87$\hkpc. 
 
 Considering that the statistics for the cluster sample are dominated
 by objects in the mass range of the \bullg\ we make a comparison
 against this sample. Table \ref{table:numbers} shows that $\sim 40\%$ of the 
-clusters are expected to have large DM-DM displacements, this is a
+clusters are expected to have large DM-DM displacements, which is a
 factor of $\sim 2$ larger than the observational estimate by
 \cite{Foex2013}. However, roughly $\sim 7\%$ of these systems present a
 displacement equal or larger than the observed in the \bullg, a
 fraction that is compatible with the $1/13\sim 0.07$ fraction in the
 SL2S sample from which \bullg\ was drawn. 
 
-
 This rough comparison  shows that our estimates for the relative number of
-bullet systems (large DM-baryon displacements) with respect to
+bullet systems (large DM-gas displacements) with respect to
 multi-modal systems (large DM-DM displacements) is compatible with
 observations. A proper comparison must take into account all the observational
 uncertainties, biases and mixes between our two populations (groups \&
@@ -442,18 +438,16 @@ than the expected number density of \bullg\ systems in the cluster
 sample. 
 
 
-
-
 \begin{figure*}
 \begin{center}
 \includegraphics[width=0.9\textwidth]{figure_3.eps}
 \end{center}
 \caption{Integrated probability distribution for the estimated
-  baryonic displacements in the group and cluster samples. Continous (dashed)
+  DM-gas displacements in the group and cluster samples. Continous (dashed)
   lines correspond to clusters (groups). The continuous black line
   marked as $P_{2D}$ shows the statistics reported by
   \citet{ForeroRomero2010} for a cosmological simulation including DM
-  and baryons. The vertical lines correspond to the mean value and
+  and gas. The vertical lines correspond to the mean value and
   uncertainty of the displacement measured for \bullg.} 
 \label{fig:baryonic_displacements}
 \end{figure*}
@@ -514,17 +508,18 @@ For the case of \bullg\ a fair comparison is achieved against our cluster
 sample which has statistics dominated by objects of similar mass. In
 a rough comparison using the observational criteria \citep{Foex2013,
   Gastaldello} we find that the relative number of bullets
-(large DM-baryon displacement) with respect to a general sample of
+(large DM-gas displacement) with respect to a general sample of
 multi-modal systems (large DM-DM displacements) is consistent with
 observations; both are in the range $\sim 7\%$. 
 
-In terms of absolute number densities, we expect to have $\sim 6.0\times
-10^{-7}$ Mpc$^{-3}$ groups similar to \bullg; three times the expected
-value for clusters. This opens up a new observational possibility with surveys
+Using the same criteria we find that in the simulation there there are
+$\sim 6.0\times 10^{-7}$ Mpc$^{-3}$ groups similar to \bullg. This
+number density is three times larger than the computed value for
+clusters. This opens up a new observational possibility with surveys
 such as SL2S that target a large number of groups and estimate its
 multi-modal nature from lensing analysis \citep{Foex2013}. An approach
 that can be further exploited with upcoming lensing surveys (e.g. with
-the {\it Euclid} satellite) and pushes for X-ray surveys with higher
+ he {\it Euclid} satellite) and pushes for X-ray surveys with higher
 sensibility: chances are larger to find bullets in systems with lower
 X-ray luminosities.
 
