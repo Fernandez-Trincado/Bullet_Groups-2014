@@ -3,7 +3,7 @@ MAIN  = ms
 
 $(MAIN).pdf: 	$(MAIN).tex
 	$(LATEX) $(MAIN).tex 
-	bibtex $(MAIN)
+#	bibtex $(MAIN)
 	$(LATEX) $(MAIN).tex 
 	$(LATEX) $(MAIN).tex 
 	dvips $(MAIN).dvi -o $(MAIN).ps
