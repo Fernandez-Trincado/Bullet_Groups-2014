@@ -1,13 +1,12 @@
-LATEX = latex
+LATEX = pdflatex
 MAIN  = ms
 
 $(MAIN).pdf: 	$(MAIN).tex
 	$(LATEX) $(MAIN).tex 
 #	bibtex $(MAIN)
+#	$(LATEX) $(MAIN).tex 
 	$(LATEX) $(MAIN).tex 
-	$(LATEX) $(MAIN).tex 
-	dvips $(MAIN).dvi -o $(MAIN).ps
-	ps2pdf $(MAIN).ps 
+
 
 diff:
 	latexdiff $(MAIN)_old.tex $(MAIN).tex > $(MAIN)_diff.tex
