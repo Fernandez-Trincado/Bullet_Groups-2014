@@ -13,13 +13,12 @@ diff:
 	$(LATEX) $(MAIN)_diff.tex 
 
 clean:
-	rm -f $(MAIN).aux
-	rm -f $(MAIN).bbl
-	rm -f $(MAIN).ps
-	rm -f $(MAIN).pdf
-	rm -f $(MAIN).blg
-	rm -f $(MAIN).log
-	rm -f $(MAIN).dvi
+	rm -f *.aux
+	rm -f *.bbl
+	rm -f *.ps
+	rm -f *.blg
+	rm -f *.log
+	rm -f *.dvi
 	rm -f *~
 view: 
 	open $(MAIN).pdf &
