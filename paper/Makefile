@@ -19,6 +19,7 @@ clean:
 	rm -f *.blg
 	rm -f *.log
 	rm -f *.dvi
+	rm -f $(MAIN).pdf $(MAIN)_diff.pdf
 	rm -f *~
 view: 
 	open $(MAIN).pdf &
